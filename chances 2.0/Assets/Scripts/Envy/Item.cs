@@ -128,11 +128,13 @@ public class Item : MonoBehaviour
 
             if (cockroachLife.health != 0)
             {
+
                 gameManagerSloth.AttackCk();
                 gameManagerSloth.AnimateCKAttack();
             }
             else
             {
+                itemB = true;
                 gameManagerSloth.SlothAttack();
             }
         }

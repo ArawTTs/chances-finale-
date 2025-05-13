@@ -16,6 +16,7 @@ public class Finish : MonoBehaviour
     public GameManagerSloth gameManager;
     public SkillOption skillOption;
     public StartBlinkingAnim startBlinkingAnim;
+    public Item item;
 
     public GameObject[] boxHide;
 
@@ -52,14 +53,18 @@ public class Finish : MonoBehaviour
             skillOption.attack = false;
         }
 
-        enemyHealth.TakeDamage(totalDamage);
+        if (item.itemB != true)
+        {
+            enemyHealth.TakeDamage(totalDamage);
+            gameManager.DisableVidAttackAnim();
+            item.itemB = false;
+        }
 
 
         // Disable sloth-related GameObjects
         slothCharacter.SetActive(false);
         // slothLifeBar.SetActive(false);
         gameManager.slothAttack.SetActive(false);
-        gameManager.PlayerBlinkAnim();
         // Reset game statea
         gameManager.check = false;
         cameraController.FightScene();

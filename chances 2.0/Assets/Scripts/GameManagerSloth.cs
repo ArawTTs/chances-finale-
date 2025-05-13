@@ -14,6 +14,7 @@ public class GameManagerSloth : MonoBehaviour
     public TimeCode timeCode;
     public Finish finish;
     public Enemy enemy;
+    public ShieldIndicator shieldIndicator;
     public StartBlinkingAnim startBlinkingAnim;
     [SerializeField] private GameObject timeCodeGO;
     [SerializeField] private GameObject playerBack;
@@ -204,7 +205,7 @@ public class GameManagerSloth : MonoBehaviour
     }
 
 
-    private void DisableVidAttackAnim()
+    public void DisableVidAttackAnim()
     {
         videos[0].SetActive(false);
         startBlinkingAnim.StartBlinking(0);
@@ -253,13 +254,14 @@ public class GameManagerSloth : MonoBehaviour
     }
     public void AnimateCKAttack()
     {
-        Invoke("DelayCameraCK", 1.2f);
+        Invoke("DelayCameraCK", .5f);
 
 
         playerBack.SetActive(true);
         playerFront.SetActive(false);
 
         Invoke("DisableAttackCk", 1.0f);
+
 
 
         // Damage Player
@@ -289,8 +291,6 @@ public class GameManagerSloth : MonoBehaviour
     private void DelayHide()
     {
         skillOption.HideShield();
-
-
     }
 
     public void AttackCk()
@@ -319,6 +319,10 @@ public class GameManagerSloth : MonoBehaviour
         {
             ck.SetActive(false);
         });
+
+    }
+    public void AnimateBlinkCk()
+    {
         startBlinkingAnim.StartBlinking(1);
         startBlinkingAnim.StartBlinking(2);
     }
@@ -390,10 +394,10 @@ public class GameManagerSloth : MonoBehaviour
         {
             Box[0].SetActive(true);
 
-
             slothGameplay[0].SetActive(true);
             timeCodeGO.SetActive(true);
             timeCode.initialCountdownDuration = 20f;
+            timeCode.totalTime = 20f;
         }
         else if (healthPercent >= 0.33f)
         {
@@ -402,6 +406,8 @@ public class GameManagerSloth : MonoBehaviour
             slothGameplay[1].SetActive(true);
             timeCodeGO.SetActive(true);
             timeCode.initialCountdownDuration = 35f;
+            timeCode.totalTime = 35f;
+
         }
         else if (healthPercent > 0f)
         {
@@ -409,6 +415,8 @@ public class GameManagerSloth : MonoBehaviour
             slothGameplay[2].SetActive(true);
             timeCodeGO.SetActive(true);
             Box[2].SetActive(true);
+            timeCode.totalTime = 50f;
+
 
         }
 
@@ -449,10 +457,11 @@ public class GameManagerSloth : MonoBehaviour
     public void TakeDamageEnemy()
     {
         slothLife.TakeDamage(10);
-        Invoke(nameof(StartBlinkSloth), 1f);
+        Invoke(nameof(StartBlinkSloth), 6f);
     }
     private void StartBlinkSloth()
     {
         startBlinkingAnim.StartBlinking(0);
+        shieldIndicator.FlashGrey();
     }
 }

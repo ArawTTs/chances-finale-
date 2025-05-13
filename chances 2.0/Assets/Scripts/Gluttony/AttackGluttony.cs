@@ -117,6 +117,12 @@ public class AttackGluttony : MonoBehaviour
         hasLoaded = false;
     }
 
+    public void DamageEnemy()
+    {
+        eHealth.TakeDamage(10);
+        Invoke(nameof(CallBlink), 5f);
+    }
+
     public void PlayGame()
     {
         buttons[3].SetActive(false);
@@ -134,6 +140,7 @@ public class AttackGluttony : MonoBehaviour
     }
     public void PlayerAnimAttack()
     {
+        HideButtons();
         pAnimations[0].SetActive(true);
         Invoke("ReturnAnimation", 2.8f);
         // Invoke("Attack", 2.8f);
@@ -156,7 +163,7 @@ public class AttackGluttony : MonoBehaviour
 
         }
     }
-    private void HideButtons()
+    public void HideButtons()
     {
         foreach (var objToHide in buttons)
         {

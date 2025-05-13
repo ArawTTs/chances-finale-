@@ -100,8 +100,9 @@ public class Skill : MonoBehaviour
             if (cockroachLife.health != 0)
             {
                 gameManagerSloth.AttackCk();
-                Invoke(nameof(AnimateShield), 2f);
-                Invoke(nameof(SkillShield), 5f);
+                Invoke(nameof(AnimateShield), 1f);
+                Invoke(nameof(SkillShield), 4.5f);
+                Invoke(nameof(DelayCKBlink), 5f);
                 Invoke(nameof(DelayCKAttack), 4f);
             }
             else
@@ -118,13 +119,31 @@ public class Skill : MonoBehaviour
 
             }
         }
-
+        if (attackGluttony != null)
+        {
+            attackGluttony.EnemyAnimAttack();
+            Invoke(nameof(AnimateShield), 2f);
+            Invoke(nameof(SkillShield), 5f);
+            skillOption.shield = false;
+            skillOption.HideShield();
+            attackGluttony.DamageEnemy();
+            Invoke(nameof(ShieldIndi), 5f);
+        }
     }
 
+    private void DelayCKBlink()
+    {
+        gameManagerSloth.AnimateBlinkCk();
+    }
     private void DelayCKAttack()
     {
         gameManagerSloth.AnimateCKAttack();
+        ShieldIndi();
+    }
+    private void ShieldIndi()
+    {
         shieldIndicator.FlashGrey();
+
     }
 
     private void ExecuteManagerActions()
@@ -152,21 +171,23 @@ public class Skill : MonoBehaviour
                 cockroachLife.TakeDamage(Random.Range(totalDamage, totalDamage + 10));
                 gameManagerSloth.AttackCk();
                 gameManagerSloth.AnimateCKAttack();
+                Invoke(nameof(DelayCKBlink), 1f);
             }
             else
             {
+                // gameManagerSloth.OnClickAttack();
                 gameManagerSloth.SlothAttack();
             }
-        }
-        if (gameManagerGreedPride != null)
-        {
-            gameManagerGreedPride.ReturnAnimation();
         }
         if (attackGluttony != null)
         {
             attackGluttony.EnemyAnimAttack();
 
-            Invoke("GluttonyPlayGame", 1f);
+            Invoke("GluttonyPlayGame", 2f);
+        }
+        if (gameManagerGreedPride != null)
+        {
+            gameManagerGreedPride.ReturnAnimation();
         }
 
         if (gameFlowManagerLust != null)

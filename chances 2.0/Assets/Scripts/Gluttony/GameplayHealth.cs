@@ -7,11 +7,12 @@ public class GameplayHealth : MonoBehaviour
 {
     public Image healthBar;
     public int health = 100;
+
     private HealthSystemPlayer pHealth;
     public AttackGluttony attackGluttony;
     [SerializeField] private StartBlinkingAnim blink;
+    [SerializeField] private SkillOption skillOption;
     [SerializeField] private GameObject game;
-
 
     public int damagePerSecond = 3;
     private float damageTimer = 0f;
@@ -22,13 +23,18 @@ public class GameplayHealth : MonoBehaviour
         if (pHealth == null)
             pHealth = FindObjectOfType<HealthSystemPlayer>();
     }
-    public void Update()
+    void OnEnable()
+    {
+        health = 100;
+    }
+    void Update()
     {
         healthBar.fillAmount = health / 100f;
 
         if (health > 0)
         {
             damageTimer += Time.deltaTime;
+
             if (damageTimer >= 1f)
             {
                 TakeDamage(damagePerSecond);
@@ -36,28 +42,11 @@ public class GameplayHealth : MonoBehaviour
             }
         }
     }
-    void OnEnable()
-    {
-        health = 100;
-    }
 
     public void TakeDamage(int damage)
     {
         health -= damage;
         health = Mathf.Clamp(health, 0, 100);
-
-        if (health <= 0)
-        {
-            PlayerStats.Instance.PHealth -= Random.Range(10, 25);
-            PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
-            //disable game
-            game.SetActive(false);
-            attackGluttony.ReturnAll();
-            blink.StartBlinking(1);
-
-        }
-
-
     }
 
     public void Heal(int heal)
