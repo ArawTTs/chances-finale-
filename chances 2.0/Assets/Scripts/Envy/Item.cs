@@ -20,10 +20,6 @@ public class Item : MonoBehaviour
     public HealthSystem cockroachLife;
     public Button[] buttons;
 
-    public TextMeshProUGUI skillS;
-    public TextMeshProUGUI skillM;
-    public TextMeshProUGUI healthS;
-    public TextMeshProUGUI healthM;
 
 
 
@@ -48,8 +44,8 @@ public class Item : MonoBehaviour
         // Assign listeners to buttons
         buttons[0].onClick.AddListener(() => UseSmallBottle());
         buttons[1].onClick.AddListener(() => UseMidBottle());
-        buttons[4].onClick.AddListener(() => EatChocolate());
-        buttons[5].onClick.AddListener(() => UseMedkit());
+        buttons[2].onClick.AddListener(() => EatChocolate());
+        buttons[3].onClick.AddListener(() => UseMedkit());
 
 
         ItemStats.Instance.smallBottle = PlayerPrefs.GetInt("SmallBottle", ItemStats.Instance.smallBottle);
@@ -62,28 +58,6 @@ public class Item : MonoBehaviour
         UpdateButtonStates();
     }
 
-    void Update()
-    {
-        UpdateItemValue();
-    }
-
-    void UpdateItemValue()
-    {
-        int small = PlayerPrefs.GetInt("SmallBottle", ItemStats.Instance.smallBottle);
-        int large = PlayerPrefs.GetInt("LargeBottle", ItemStats.Instance.largeBottle);
-        int medS = PlayerPrefs.GetInt("SmallMedkit", ItemStats.Instance.smallMedkit);
-        int medL = PlayerPrefs.GetInt("LargeMedkit", ItemStats.Instance.largeMedkit);
-
-        ItemStats.Instance.smallBottle = small;
-        ItemStats.Instance.largeBottle = large;
-        ItemStats.Instance.smallMedkit = medS;
-        ItemStats.Instance.largeMedkit = medL;
-
-        skillS.text = small.ToString();
-        skillM.text = large.ToString();
-        healthS.text = medS.ToString();
-        healthM.text = medL.ToString();
-    }
 
 
     #region skill animation
@@ -118,6 +92,7 @@ public class Item : MonoBehaviour
     }
     private void DoneItem()
     {
+
         ToHide.ToList().ForEach(button =>
         {
             button.SetActive(true);
@@ -137,18 +112,23 @@ public class Item : MonoBehaviour
     #endregion
 
     #region attack
+    public bool itemB = false;
     private void EnemyTurnGameplay()
     {
         if (gameManagerEnvyNew != null)
         {
-            gameManagerEnvyNew.EAnimatePlayer();
+            itemB = true;
+            // gameManagerEnvyNew.EAnimatePlayer();
 
-            gameManagerEnvyNew.EnvyAttack();
+            gameManagerEnvyNew.EnvyShow();
+
         }
         if (gameManagerSloth != null)
         {
+
             if (cockroachLife.health != 0)
             {
+                gameManagerSloth.AttackCk();
                 gameManagerSloth.AnimateCKAttack();
             }
             else
@@ -169,16 +149,6 @@ public class Item : MonoBehaviour
             attackGluttony.EnemyAnimAttack();
 
             Invoke("GluttonyPlayGame", 1f);
-
-            // ItemStats.Instance.smallBottle += 10;
-            // ItemStats.Instance.largeBottle += 10;
-            // ItemStats.Instance.smallMedkit += 10;
-            // ItemStats.Instance.largeMedkit += 10;
-            // PlayerPrefs.SetInt("SmallBottle", ItemStats.Instance.smallBottle);
-            // PlayerPrefs.SetInt("LargeBottle", ItemStats.Instance.largeBottle);
-            // PlayerPrefs.SetInt("SmallMedkit", ItemStats.Instance.smallMedkit);
-            // PlayerPrefs.SetInt("LargeMedkit", ItemStats.Instance.largeMedkit);
-            // PlayerPrefs.Save();
         }
         if (gameManagerWrath != null)
         {
@@ -200,8 +170,8 @@ public class Item : MonoBehaviour
     {
         buttons[0].interactable = ItemStats.Instance.smallBottle > 0;
         buttons[1].interactable = ItemStats.Instance.largeBottle > 0;
-        buttons[4].interactable = ItemStats.Instance.smallMedkit > 0;
-        buttons[5].interactable = ItemStats.Instance.smallBottle > 0;
+        buttons[2].interactable = ItemStats.Instance.smallMedkit > 0;
+        buttons[3].interactable = ItemStats.Instance.smallBottle > 0;
     }
 
     void UseSmallBottle()
@@ -216,6 +186,8 @@ public class Item : MonoBehaviour
 
             UpdateButtonStates();
             DoneItem();
+            Debug.Log("Bruh");
+
         }
     }
 
@@ -228,6 +200,7 @@ public class Item : MonoBehaviour
             ItemStats.Instance.largeBottle--;
             PlayerPrefs.SetInt("LargeBottle", ItemStats.Instance.largeBottle);
             PlayerPrefs.Save();
+
             UpdateButtonStates();
             DoneItem();
         }

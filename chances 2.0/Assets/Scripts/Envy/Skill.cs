@@ -16,6 +16,8 @@ public class Skill : MonoBehaviour
     public AttackGluttony attackGluttony;
     public GameManagerWrath gameManagerWrath;
     public SkillManager skillManager;
+    public SkillOption skillOption;
+    public ShieldIndicator shieldIndicator;
     #endregion
     #region Serialized Fields
     [SerializeField] private GameObject playerBack;
@@ -76,30 +78,80 @@ public class Skill : MonoBehaviour
         playerBack.SetActive(true);
         PSkills[1].SetActive(false);
         enemyLife.SetActive(true);
+        ReturnAll();
 
-        ExecuteManagerActions();
-        // ReturnAll();
     }
     #endregion
 
     #region Helper Methods
-    private void ExecuteManagerActions()
+
+    public void ShieldAction()
     {
-        if (gameFlowManagerLust != null)
-        {
-            gameFlowManagerLust.PlayGame();
-        }
         if (gameManagerEnvyNew != null)
         {
-            gameManagerEnvyNew.EAnimatePlayer();
-            gameManagerEnvyNew.EnvyAttack();
+            // gameManagerEnvyNew.EAnimatePlayer();
+            gameManagerEnvyNew.EnvyAnimation();
+            Invoke(nameof(AnimateShield), 2f);
+            Invoke(nameof(SkillShield), 5f);
         }
 
         if (gameManagerSloth != null)
         {
             if (cockroachLife.health != 0)
             {
-                gameManagerSloth.OnClickAttack();
+                gameManagerSloth.AttackCk();
+                Invoke(nameof(AnimateShield), 2f);
+                Invoke(nameof(SkillShield), 5f);
+                Invoke(nameof(DelayCKAttack), 4f);
+            }
+            else
+            {
+                gameManagerSloth.AnimationSloth();
+                //player shield 
+                Invoke(nameof(AnimateShield), 2f);
+                Invoke(nameof(SkillShield), 5f);
+                skillOption.shield = false;
+                skillOption.HideShield();
+                //deflect damage
+
+                gameManagerSloth.TakeDamageEnemy();
+
+            }
+        }
+
+    }
+
+    private void DelayCKAttack()
+    {
+        gameManagerSloth.AnimateCKAttack();
+        shieldIndicator.FlashGrey();
+    }
+
+    private void ExecuteManagerActions()
+    {
+
+        if (gameManagerEnvyNew != null)
+        {
+            // gameManagerEnvyNew.EAnimatePlayer();
+            gameManagerEnvyNew.EnvyShow();
+        }
+
+        if (gameManagerSloth != null)
+        {
+            if (cockroachLife.health != 0)
+            {
+                // gameManagerSloth.OnClickAttack();
+                int totalDamage = PlayerPrefs.GetInt("AttackPower", PlayerStats.Instance.AttackPower);
+
+                if (skillOption != null && skillOption.attack == true)
+                {
+                    totalDamage += PlayerPrefs.GetInt("MagicPower", PlayerStats.Instance.MagicPower);
+                    skillOption.attack = false;
+                }
+
+                cockroachLife.TakeDamage(Random.Range(totalDamage, totalDamage + 10));
+                gameManagerSloth.AttackCk();
+                gameManagerSloth.AnimateCKAttack();
             }
             else
             {
@@ -116,6 +168,11 @@ public class Skill : MonoBehaviour
 
             Invoke("GluttonyPlayGame", 1f);
         }
+
+        if (gameFlowManagerLust != null)
+        {
+            gameFlowManagerLust.PlayGame();
+        }
         if (gameManagerWrath != null)
         {
             gameManagerWrath.ReturnAnimation();
@@ -128,7 +185,8 @@ public class Skill : MonoBehaviour
     }
     public void ReturnAll()
     {
-        ckenemyLife?.SetActive(true);
+        if (ckenemyLife != null)
+            ckenemyLife?.SetActive(true);
 
         BtnsToShow.ToList().ForEach(button => button.SetActive(true));
     }

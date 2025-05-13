@@ -20,6 +20,7 @@ public class TimeCode : MonoBehaviour
     public float currentCountdownDuration;
     public GameObject lose;
     public GameObject hideGameplay;
+    public float totalTime;
     public bool loseIndicator;
     public GameObject[] gameplays;
 
@@ -39,7 +40,7 @@ public class TimeCode : MonoBehaviour
         // Update UI
         int secondsLeft = Mathf.CeilToInt(countdownTimer);
         countdownText.text = secondsLeft.ToString();
-        bar.fillAmount = countdownTimer / currentCountdownDuration;
+        bar.fillAmount = countdownTimer / totalTime;
 
         //lose
         if (countdownTimer == 0)
@@ -59,6 +60,7 @@ public class TimeCode : MonoBehaviour
 
                     PlayerStats.Instance.PHealth -= rndm;
                     PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
+                    gameManagerEnvy.StartBlinking0();
 
                 }
                 else if (skillOption.shield == true)

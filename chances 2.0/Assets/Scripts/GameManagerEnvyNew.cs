@@ -13,6 +13,7 @@ public class GameManagerEnvyNew : MonoBehaviour
     public CameraSwitch cameraSwitch;
     public TimeCode timeCode;
     public SkillOption skillOption;
+    public Item item;
     [SerializeField] private GameObject playerBack;
     [SerializeField] private GameObject playerFront;
     //EnvySection
@@ -24,6 +25,7 @@ public class GameManagerEnvyNew : MonoBehaviour
     [SerializeField] private GameObject envyGameplay;
     [SerializeField] private GameObject playerLife;
     public StartBlinkingAnim blink;
+    public ShieldIndicator shieldInd;
     //SlothSection
 
 
@@ -143,14 +145,18 @@ public class GameManagerEnvyNew : MonoBehaviour
         if (envyLife.health >= 80)
         {
             timeCode.countdownTimer = 20f;
+            timeCode.totalTime = 20f;
         }
         else if (envyLife.health <= 80 && envyLife.health >= 60)
         {
             timeCode.countdownTimer = 15f;
+            timeCode.totalTime = 15f;
+
         }
         else if (envyLife.health <= 60)
         {
             timeCode.countdownTimer = 10f;
+            timeCode.totalTime = 10f;
         }
 
         Buttons.ToList().ForEach(button =>
@@ -196,28 +202,43 @@ public class GameManagerEnvyNew : MonoBehaviour
                 skillOption.attack = false;
             }
 
-            envyLife.TakeDamage(totalDamage);
-            blink.StartBlinking(0);
-
+            if (item.itemB == false)
+            {
+                envyLife.TakeDamage(totalDamage);
+                blink.StartBlinking(0);
+            }
+            item.itemB = false;
             ReturnAll();
         }
         else
         if (number == 1)
         {
+
+            // PVids[1].SetActive(true);
             Invoke("EnvyShow", 1f);
             HideAttack();
         }
 
     }
 
+    public void StartBlinking0()
+    {
+        blink.StartBlinking(1);
+
+    }
+    public void StartBlinking()
+    {
+        blink.StartBlinking(0);
+
+    }
     public void EAnimatePlayer()
     {
         PVids[0].SetActive(false);
 
-        if (skillOption.shield == false)
-        {
-            gameManager1.StartBlinking();
-        }
+        // if (skillOption.shield == false)
+        // {
+        //     blink.StartBlinking(0);
+        // }
 
         // cameraSwitch.FightScene();
         playerBack.SetActive(true);
@@ -230,10 +251,42 @@ public class GameManagerEnvyNew : MonoBehaviour
         }
         eenemyLife.SetActive(true);
     }
+    public void EnvyShow()
+    {
+        PVids[1].SetActive(true);
+        Invoke(nameof(HideEnvyVid), 1.5f); // Calls after 1.5s
+    }
 
-    private void EnvyShow()
+    void HideEnvyVid()
     {
         envyGameplay.SetActive(true);
+        HideAttack();
+        PVids[1].SetActive(false);
+    }
+
+    public void EnvyAnimation()
+    {
+        // HideAttack();
+        PVids[1].SetActive(true);
+        Invoke(nameof(DisableAnim), 3f); // Calls after 1.5s
+    }
+
+    void DisableAnim()
+    {
+        PVids[1].SetActive(false);
+        skillOption.shield = false;
+        skillOption.HideShield();
+
+        // ReturnAll();
+        Invoke(nameof(ShieldPlayerIndicator), 2f);
+    }
+
+    void ShieldPlayerIndicator()
+    {
+        shieldInd.FlashGrey();
+
+        Invoke(nameof(StartBlinking), .5f);
+        envyLife.TakeDamage(10);
     }
 
     #endregion

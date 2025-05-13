@@ -27,13 +27,14 @@ public class SkillOption : MonoBehaviour
     {
         shield = true;
 
-        skill.AnimateShield();
+        // skill.AnimateShield();
         shieldIcon.ToList().ForEach(elements =>
         {
             elements.SetActive(true);
         });
-        Invoke("DelayShield", timeDelayShield);
 
+        skill.HideAttack();
+        skill.ShieldAction();
     }
 
     private void DelaySkill()
@@ -42,7 +43,7 @@ public class SkillOption : MonoBehaviour
     }
     private void DelayShield()
     {
-        skill.SkillShield();
+        skill.ShieldAction();
     }
 
     public void HideShield()

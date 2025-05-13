@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 9161206081521083727}
   - component: {fileID: 6144114142498287929}
   - component: {fileID: 2123018669066975431}
+  - component: {fileID: 81006300268893311}
   m_Layer: 5
   m_Name: Skill
   m_TagString: Untagged
@@ -226,7 +227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSwitch: {fileID: 0}
   cockroachLife: {fileID: 0}
-  startBlinking: {fileID: 0}
   gameManagerSloth: {fileID: 0}
   gameManagerEnvyNew: {fileID: 0}
   gameFlowManagerLust: {fileID: 0}
@@ -240,14 +240,23 @@ MonoBehaviour:
   enemyLife: {fileID: 0}
   ckenemyLife: {fileID: 0}
   skillOpt: {fileID: 0}
-  PSkills: []
+  PSkills:
+  - {fileID: 0}
+  - {fileID: 0}
   BtnsToShow:
   - {fileID: 0}
   - {fileID: 6406312317015275031}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ToHide:
   - {fileID: 0}
   - {fileID: 6406312317015275031}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
 --- !u!114 &2123018669066975431
 MonoBehaviour:
@@ -305,3 +314,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &81006300268893311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6406312317015275031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da15c9db40d07784f9c22fd45c27a7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRenderer: {fileID: 0}

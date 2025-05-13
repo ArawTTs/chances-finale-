@@ -46,8 +46,11 @@ public class StartBlinkingAnim : MonoBehaviour
     void Blink_0() { Blink(0); }
     void Blink_1() { Blink(1); }
     void Blink_2() { Blink(2); }
+    void Blink_3() { Blink(3); }
+
 
     void StopBlinking_0() { StopBlinking(0); }
     void StopBlinking_1() { StopBlinking(1); }
     void StopBlinking_2() { StopBlinking(2); }
+    void StopBlinking_3() { StopBlinking(3); }
 }

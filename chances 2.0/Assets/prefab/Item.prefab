@@ -290,13 +290,29 @@ MonoBehaviour:
   attackGluttony: {fileID: 0}
   gameManagerWrath: {fileID: 0}
   cockroachLife: {fileID: 0}
-  buttons: []
+  buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   playerBack: {fileID: 0}
   playerItem: {fileID: 0}
   inventory: {fileID: 0}
   back: {fileID: 0}
-  btnsToShow: []
+  btnsToShow:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2482737799955499190}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   ToHide:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 2482737799955499190}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  itemB: 0

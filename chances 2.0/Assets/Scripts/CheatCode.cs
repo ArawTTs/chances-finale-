@@ -47,11 +47,32 @@ public class CheatCode : MonoBehaviour
         PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
         PlayerPrefs.SetInt("PSkill", PlayerStats.Instance.PSkill);
     }
+    public void OnClickRestoreItems()
+    {
+        ItemStats.Instance.smallBottle = 10;
+        ItemStats.Instance.largeBottle = 10;
+        ItemStats.Instance.smallMedkit = 10;
+        ItemStats.Instance.largeMedkit = 10;
 
+        PlayerPrefs.SetInt("SmallBottle", ItemStats.Instance.smallBottle);
+        PlayerPrefs.SetInt("LargeBottle", ItemStats.Instance.largeBottle);
+        PlayerPrefs.SetInt("SmallMedkit", ItemStats.Instance.smallMedkit);
+        PlayerPrefs.SetInt("LargeMedkit", ItemStats.Instance.largeMedkit);
+
+    }
     void UpdateStat(string input, string key, out int statField)
     {
         string cleaned = Regex.Replace(input, "[^0-9]", "");
-        int.TryParse(cleaned, out statField);
-        PlayerPrefs.SetInt(key, statField);
+
+        if (!string.IsNullOrEmpty(cleaned))
+        {
+            int.TryParse(cleaned, out statField);
+            PlayerPrefs.SetInt(key, statField);
+        }
+        else
+        {
+            statField = PlayerPrefs.GetInt(key, 0); // Keep old value
+        }
     }
+
 }

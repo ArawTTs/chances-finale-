@@ -203,6 +203,7 @@ public class GameManagerSloth : MonoBehaviour
         }
     }
 
+
     private void DisableVidAttackAnim()
     {
         videos[0].SetActive(false);
@@ -252,10 +253,7 @@ public class GameManagerSloth : MonoBehaviour
     }
     public void AnimateCKAttack()
     {
-        AttackCk();
         Invoke("DelayCameraCK", 1.2f);
-
-
 
 
         playerBack.SetActive(true);
@@ -265,28 +263,22 @@ public class GameManagerSloth : MonoBehaviour
 
 
         // Damage Player
+
         int damageToPlayer = Random.Range(5, 15);
         if (!skillOption.shield)
         {
 
-
-
-            //  Damage Player *** 
-
             PlayerStats.Instance.PHealth -= damageToPlayer;
             PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
 
+            Invoke(nameof(PlayerBlinkAnim), 2f);
             // ***
-
         }
         else
         {
             skillOption.shield = false;
+            cockroachLife.TakeDamage(10);
         }
-
-        // Activate enemy life UI elements
-        // ckenemyLife.SetActive(true);
-        // senemyLife.SetActive(true);
 
 
         Invoke("ReturnAll", 1f);
@@ -301,7 +293,7 @@ public class GameManagerSloth : MonoBehaviour
 
     }
 
-    private void AttackCk()
+    public void AttackCk()
     {
         cameraSwitch.EnemyPosition();
         ckIdleenmy.ToList().ForEach(ck =>
@@ -336,13 +328,26 @@ public class GameManagerSloth : MonoBehaviour
 
 
     #region Sloth Actions
+    public void AnimationSloth()
+    {
+        SlothActivate();
+        videos[0].SetActive(false);
+        videos[1].SetActive(true);
 
+        Invoke("DisableAnim", 3f);
+
+        HideAttack();
+    }
+    private void DisableAnim()
+    {
+        videos[1].SetActive(false);
+
+    }
 
     public void SlothAttack()
     {
         SlothActivate();
         videos[0].SetActive(false);
-        videos[1].SetActive(true);
         videos[1].SetActive(true);
 
         Invoke("SlothShow", 3f);
@@ -441,5 +446,13 @@ public class GameManagerSloth : MonoBehaviour
 
     #endregion
 
-
+    public void TakeDamageEnemy()
+    {
+        slothLife.TakeDamage(10);
+        Invoke(nameof(StartBlinkSloth), 1f);
+    }
+    private void StartBlinkSloth()
+    {
+        startBlinkingAnim.StartBlinking(0);
+    }
 }

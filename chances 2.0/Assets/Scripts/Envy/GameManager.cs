@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerFront;
     public GameObject attackbtn;
     public GameObject EnemyDeath;
+    public Item item;
 
     private bool isRed = false;
     public Sprite bgImage;
@@ -242,7 +243,12 @@ public class GameManager : MonoBehaviour
                 skillOption.attack = false;
             }
 
-            enemyLife.TakeDamage(totalDamage);
+            if (item.itemB == false)
+            {
+                enemyLife.TakeDamage(totalDamage);
+                gameManagerEnvy.StartBlinking();
+            }
+            item.itemB = false;
 
             // ***
 
