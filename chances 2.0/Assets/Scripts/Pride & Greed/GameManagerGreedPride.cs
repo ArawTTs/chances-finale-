@@ -182,15 +182,11 @@ public class GameManagerGreedPride : MonoBehaviour
 
         if (!skillOption.shield)
         {
-            if (item.itemB == false)
-            {
-                PlayerStats.Instance.PHealth -= damage;
-                PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
-                blink.StartBlinking(2);
-                Debug.Log("ItemB: " + item.itemB);
 
-            }
-
+            PlayerStats.Instance.PHealth -= damage;
+            PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
+            blink.StartBlinking(2);
+            Debug.Log("ItemB: " + item.itemB);
             item.itemB = false;
         }
         else
