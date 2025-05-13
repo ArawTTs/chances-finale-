@@ -107,10 +107,7 @@ public class TimeCode : MonoBehaviour
                 {
                     if (item.itemB == false)
                     {
-
                         gameManagerGreedPride.EnemyTakeDamage();
-                        Debug.Log("wazap");
-
                     }
                     item.itemB = false;
 
@@ -127,6 +124,7 @@ public class TimeCode : MonoBehaviour
             {
                 PlayerStats.Instance.PHealth -= rndm + 5;
                 PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
+                gameManagerWrath.PlayerBlink();
                 gameManagerWrath.ReturnAll();
             }
 

@@ -158,7 +158,8 @@ public class Item : MonoBehaviour
         }
         if (gameManagerWrath != null)
         {
-            gameManagerWrath.OnClickAttack();
+            itemB = true;
+            gameManagerWrath.ReturnAnimation();
         }
     }
 

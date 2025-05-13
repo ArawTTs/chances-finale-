@@ -74,6 +74,11 @@ public class GameManagerWrath : MonoBehaviour
 
         SceneManager.LoadScene(1);
     }
+
+    void Onnable()
+    {
+        timeCode.countdownTimer = timeCode.totalTime;
+    }
     public void OnClickAttack()
     {
 
@@ -94,7 +99,7 @@ public class GameManagerWrath : MonoBehaviour
 
     private void RandomBattleOutcome()
     {
-        int number = Random.value < 0.6f ? 1 : 0;
+        int number = Random.value < 0.5f ? 1 : 0;
         playerVids[0].SetActive(false);
 
         if (number == 0)
@@ -121,12 +126,19 @@ public class GameManagerWrath : MonoBehaviour
         senemyLife.SetActive(false);
     }
 
+    public void PlayerBlink()
+    {
+        blink.StartBlinking(0);
+
+    }
+    public void EnemyBlink()
+    {
+        blink.StartBlinking(1);
+    }
+
     public void ReturnAnimation()
     {
-
         EnemyAnimAttack();
-
-
         Invoke(nameof(ReturnEnemyAnim), 4.5f);
     }
     public void EnemyAnimAttack()
@@ -134,6 +146,11 @@ public class GameManagerWrath : MonoBehaviour
         enemyAnimations[1].SetActive(true);
     }
 
+    public void NormalReturn()
+    {
+        enemyAnimations[0].SetActive(true);
+        enemyAnimations[1].SetActive(false);
+    }
 
     public void ReturnEnemyAnim()
     {
@@ -156,9 +173,12 @@ public class GameManagerWrath : MonoBehaviour
         wrathLife.TakeDamage(totalDamage);
         blink.StartBlinking(1);
 
+    }
 
-
-
+    public void EnemyTakeDmgSh()
+    {
+        wrathLife.TakeDamage(10);
+        blink.StartBlinking(1);
     }
     public void PlayerTakeDamage()
     {
@@ -184,7 +204,8 @@ public class GameManagerWrath : MonoBehaviour
         cameraSwitch.PrideLustCameraMiniGame();
         camera.orthographic = true;
         // game.SetActive(true);
-        int rnd = Random.Range(0, gameplays.Length); // Dynamically handle array size
+        int rnd = Random.Range(0, gameplays.Length);
+        Debug.Log(rnd);
         gameplays[rnd].SetActive(true);
 
     }
@@ -199,7 +220,6 @@ public class GameManagerWrath : MonoBehaviour
         {
             x.SetActive(false);
         });
-        senemyLife.SetActive(true);
 
 
         timeCode.countdownTimer = timeCode.initialCountdownDuration;

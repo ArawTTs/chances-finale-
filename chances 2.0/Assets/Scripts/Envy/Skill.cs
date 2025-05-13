@@ -67,7 +67,7 @@ public class Skill : MonoBehaviour
     {
         playerBack.SetActive(true);
         PSkills[0].SetActive(false);
-        enemyLife.SetActive(true);
+        enemyLife.SetActive(false);
 
         ExecuteManagerActions();
         // ReturnAll();
@@ -147,6 +147,7 @@ public class Skill : MonoBehaviour
         {
             gameFlowManagerLust.LustAnimation();
 
+            Invoke(nameof(DelayAnimW), 1f);
             Invoke(nameof(AnimateShield), 2f);
             Invoke(nameof(SkillShield), 5f);
             skillOption.shield = false;
@@ -154,6 +155,18 @@ public class Skill : MonoBehaviour
 
             Invoke(nameof(ShieldIndi), 5f);
             Invoke(nameof(DelayReturnAllGnP), 5f);
+        }
+        if (gameManagerWrath != null)
+        {
+            gameManagerWrath.EnemyAnimAttack();
+            Invoke(nameof(DelayAnimW), 3f);
+            Invoke(nameof(AnimateShield), 3f);
+            Invoke(nameof(SkillShield), 6f);
+            skillOption.shield = false;
+            skillOption.HideShield();
+
+            Invoke(nameof(ShieldIndi), 6f);
+            Invoke(nameof(DelayReturnAllGnP), 6.2f);
 
         }
     }
@@ -168,11 +181,19 @@ public class Skill : MonoBehaviour
             gameFlowManagerLust.LustTakeDmg();
             gameFlowManagerLust.ReturnAll();
         }
-
-
+        if (gameManagerWrath != null)
+        {
+            gameManagerWrath.EnemyTakeDmgSh();
+            gameManagerWrath.ReturnAll();
+        }
 
     }
 
+    private void DelayAnimW()
+    {
+        gameManagerWrath.NormalReturn();
+
+    }
     private void DelayCKBlink()
     {
         gameManagerSloth.AnimateBlinkCk();

@@ -15,8 +15,15 @@ public class CircleMovement : MonoBehaviour
     private bool canTeleport = true;
     [SerializeField] private float teleportCooldown = 0.5f;
     public TimeCode timeCode;
+    public Item item;
+
 
     public GameManagerWrath gameManagerWrath;
+
+    void Onnable()
+    {
+        timeCode.countdownTimer = timeCode.totalTime;
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -69,7 +76,7 @@ public class CircleMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             // Win game logic here
-            Debug.Log("You Win!");
+            transform.position = spawnPoint.position;
 
             int totalDamage = PlayerPrefs.GetInt("AttackPower", PlayerStats.Instance.AttackPower);
 
@@ -79,7 +86,19 @@ public class CircleMovement : MonoBehaviour
                 skillOption.attack = false;
             }
 
-            wrathLife.TakeDamage(totalDamage);
+
+            if (item.itemB)
+            {
+                item.itemB = false;
+            }
+            else
+            {
+                Debug.Log("You Win!");
+
+                wrathLife.TakeDamage(totalDamage);
+                gameManagerWrath.EnemyBlink();
+            }
+
 
             gameManagerWrath.ReturnAll();
         }
