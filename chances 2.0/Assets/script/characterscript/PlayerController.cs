@@ -20,24 +20,27 @@ public class PlayerController : MonoBehaviour
     //camera
     [SerializeField] CinemachineVirtualCamera overworldCam;
     [SerializeField] CinemachineVirtualCamera closeCam;
+    private Camera cameraChange;
 
     //Bool
     public bool Walking = true;
 
     void Start()
     {
+        cameraChange = Camera.main;
+
         rb = gameObject.GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if(Walking)
+        if (Walking)
         {
             walk();
         }
     }
-
+    
     void FixedUpdate()
     {
         rb.velocity = movement.normalized * speed;
@@ -104,4 +107,11 @@ public class PlayerController : MonoBehaviour
         } 
 
    }
+    private void LateUpdate()
+    {
+        if (cameraChange != null)
+        {
+            cameraChange.farClipPlane = 10000f; // force override every frame
+        }
+    }
 }

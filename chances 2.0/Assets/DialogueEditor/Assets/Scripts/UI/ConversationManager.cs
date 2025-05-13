@@ -3,10 +3,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+
 namespace DialogueEditor
 {
     public class ConversationManager : MonoBehaviour
     {
+        
         private enum eState
         {
             TransitioningDialogueBoxOn,
@@ -38,6 +40,8 @@ namespace DialogueEditor
         public Sprite OptionImage;
         public bool OptionImageSliced;
         public bool AllowMouseInteraction;
+
+        private bool isConversationActive = false;
 
         // Non-User facing 
         // Not exposed via custom inspector
@@ -145,6 +149,8 @@ namespace DialogueEditor
 
         public void StartConversation(NPCConversation conversation)
         {
+            isConversationActive= true;
+
             m_conversation = conversation.Deserialize();
             if (OnConversationStarted != null)
                 OnConversationStarted.Invoke();
@@ -156,6 +162,7 @@ namespace DialogueEditor
 
         public void EndConversation()
         {
+            isConversationActive = false;
             SetState(eState.TransitioningDialogueOff);
 
             if (OnConversationEnded != null)
@@ -394,6 +401,7 @@ namespace DialogueEditor
 
         private void TransitionOptionsOff_Update()
         {
+            isConversationActive = false;
             m_stateTime += Time.deltaTime;
             float t = m_stateTime / TRANSITION_TIME;
 
@@ -434,6 +442,7 @@ namespace DialogueEditor
 
         private void TransitioningDialogueBoxOff_Update()
         {
+            isConversationActive = false;
             m_stateTime += Time.deltaTime;
             float t = m_stateTime / TRANSITION_TIME;
 
@@ -648,12 +657,14 @@ namespace DialogueEditor
 
         private void TurnOffUI()
         {
+            isConversationActive = false;
             PlayerController PController = GameObject.Find("player").GetComponent<PlayerController>();
             DialoguePanel.gameObject.SetActive(false);
             OptionsPanel.gameObject.SetActive(false);
 
             PController.Walking = true;
 
+            
             SetState(eState.Off);
 #if UNITY_EDITOR
             // Debug.Log("[ConversationManager]: Conversation UI off.");
@@ -847,6 +858,27 @@ namespace DialogueEditor
                     SetBool(name, val);
                 }
             }
+        }
+        public bool boolSkip()
+        {
+            return isConversationActive;
+        }
+        public bool ConversationActive()
+        {
+            return m_conversation != null && m_currentSpeech != null;
+        }
+        public void SkipConversation()
+        {
+            // Immediately stop any audio
+            if (AudioPlayer != null && AudioPlayer.isPlaying)
+                AudioPlayer.Stop();
+
+            // Nullify current conversation and speech
+            m_conversation = null;
+            m_currentSpeech = null;
+
+            // End the conversation and turn off UI
+            EndConversation();
         }
 
         private void LogWarning(string warning)

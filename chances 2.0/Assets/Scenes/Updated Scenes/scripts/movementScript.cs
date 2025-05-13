@@ -66,7 +66,7 @@ public class movementScript : MonoBehaviour
                 break;
         }
 
-        Debug.Log(walkingTimer);
+        //Debug.Log(walkingTimer);
     }
 
     public void upWalking()
