@@ -15,7 +15,6 @@ public class TargetMovement : MonoBehaviour
 
     public GameObject miniGame;
 
-    public HealthSystemPlayer healthSystemPlayer;
     public HealthSystem miniGameLife;
     public CameraSwitch cameraSwitch;
     public GameManagerGreedPride gameManagerGreedPride;
@@ -34,6 +33,11 @@ public class TargetMovement : MonoBehaviour
         HandleDash();
     }
 
+
+    void OnEnable()
+    {
+        miniGameLife.health = 100;
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (miniGameLife.health != 0)

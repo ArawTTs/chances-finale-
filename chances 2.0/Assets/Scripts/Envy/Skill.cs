@@ -129,6 +129,28 @@ public class Skill : MonoBehaviour
             attackGluttony.DamageEnemy();
             Invoke(nameof(ShieldIndi), 5f);
         }
+
+        if (gameManagerGreedPride != null)
+        {
+            gameManagerGreedPride.HideAttack();
+            gameManagerGreedPride.PlainEnemyAnim();
+            Invoke(nameof(AnimateShield), 2f);
+            Invoke(nameof(SkillShield), 5f);
+            skillOption.shield = false;
+            skillOption.HideShield();
+            gameManagerGreedPride.DeflectAttacktoEnemy();
+
+            Invoke(nameof(ShieldIndi), 5f);
+            Invoke(nameof(DelayReturnAllGnP), 5f);
+
+
+        }
+    }
+
+    private void DelayReturnAllGnP()
+    {
+        gameManagerGreedPride.ReturnAll();
+
     }
 
     private void DelayCKBlink()
@@ -187,7 +209,8 @@ public class Skill : MonoBehaviour
         }
         if (gameManagerGreedPride != null)
         {
-            gameManagerGreedPride.ReturnAnimation();
+            gameManagerGreedPride.HideAttack();
+            gameManagerGreedPride.EnemyAnimation();
         }
 
         if (gameFlowManagerLust != null)

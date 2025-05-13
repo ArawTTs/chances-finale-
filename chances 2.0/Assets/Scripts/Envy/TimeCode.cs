@@ -13,9 +13,10 @@ public class TimeCode : MonoBehaviour
     public GameManagerSloth gameManagerSloth;
     public GameManagerGreedPride gameManagerGreedPride;
     public GameManagerWrath gameManagerWrath;
+    public Item item;
     public HealthSystem miniGameLife;
     public Image bar;
-    public float initialCountdownDuration = 30f; // Initial countdown duration
+    public float initialCountdownDuration = 20f; // Initial countdown duration
     public float countdownTimer;
     public float currentCountdownDuration;
     public GameObject lose;
@@ -41,7 +42,12 @@ public class TimeCode : MonoBehaviour
         int secondsLeft = Mathf.CeilToInt(countdownTimer);
         countdownText.text = secondsLeft.ToString();
         bar.fillAmount = countdownTimer / totalTime;
+        if (miniGameLife.health <= 0)//GnP
+        {
+            gameManagerGreedPride.PlayerTakeDamage();
+            gameManagerGreedPride.ReturnAll();
 
+        }
         //lose
         if (countdownTimer == 0)
         {
@@ -97,17 +103,22 @@ public class TimeCode : MonoBehaviour
             //Pride & Greed
             if (gameManagerGreedPride != null)
             {
-                if (miniGameLife.health <= 0)
+                if (miniGameLife.health > 0)
                 {
-                    //damages player 
-                    gameManagerGreedPride.PlayerTakeDamage();
+                    if (item.itemB == false)
+                    {
 
+                        gameManagerGreedPride.EnemyTakeDamage();
+                        Debug.Log("wazap");
+
+                    }
+                    item.itemB = false;
 
                 }
                 else
                 {
-                    //enemy takes damage
-                    gameManagerGreedPride.EnemyTakeDamage();
+                    gameManagerGreedPride.PlayerTakeDamage();
+
                 }
                 gameManagerGreedPride.ReturnAll();
 

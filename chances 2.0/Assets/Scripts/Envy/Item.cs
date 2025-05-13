@@ -146,13 +146,14 @@ public class Item : MonoBehaviour
 
             Invoke("GluttonyPlayGame", 1f);
         }
+        if (gameManagerGreedPride != null)
+        {
+            itemB = true;
+            gameManagerGreedPride.EnemyAnimation();
+        }
         if (gameFlowManagerLust != null)
         {
             gameFlowManagerLust.PlayGame();
-        }
-        if (gameManagerGreedPride != null)
-        {
-            gameManagerGreedPride.ReturnAnimation();
         }
         if (gameManagerWrath != null)
         {
