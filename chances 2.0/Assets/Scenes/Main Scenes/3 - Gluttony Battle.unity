@@ -6502,7 +6502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77, y: 5}
+  m_AnchoredPosition: {x: -1243, y: -314}
   m_SizeDelta: {x: 194.173, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432359450
@@ -7020,6 +7020,7 @@ MonoBehaviour:
   blink: {fileID: 656989146}
   skillOption: {fileID: 7060427112453994671}
   shieldIndicator: {fileID: 707344374}
+  item: {fileID: 619560305}
   health: 0
   spawnTimer: 10
 --- !u!224 &607064097 stripped
@@ -7152,6 +7153,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2128835373133538568, guid: 110448efa54901247bc2fe406818d90c, type: 3}
   m_PrefabInstance: {fileID: 1670502863437809042}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &619560305 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8056655771399893062, guid: 110448efa54901247bc2fe406818d90c, type: 3}
+  m_PrefabInstance: {fileID: 1670502863437809042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619560303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f342fec70eaf0b5408e0e248f3ce4ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &632019618
 GameObject:
   m_ObjectHideFlags: 0

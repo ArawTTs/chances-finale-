@@ -13,6 +13,7 @@ public class TimerGame : MonoBehaviour
     [SerializeField] private StartBlinkingAnim blink;
     [SerializeField] private SkillOption skillOption;
     [SerializeField] private ShieldIndicator shieldIndicator;
+    [SerializeField] private Item item;
     [SerializeField] private int health;
 
     public float spawnTimer = 10f;
@@ -52,18 +53,26 @@ public class TimerGame : MonoBehaviour
 
                 if (health > 0)
                 {
-
-                    // damage enemy
-                    int totalDamage = PlayerPrefs.GetInt("AttackPower", PlayerStats.Instance.AttackPower);
-
-                    if (skillOption != null && skillOption.attack == true)
+                    if (item.itemB == true)
                     {
-                        totalDamage += PlayerPrefs.GetInt("MagicPower", PlayerStats.Instance.MagicPower);
-                        skillOption.attack = false;
-                    }
+                        item.itemB = false;
 
-                    healthSystem.TakeDamage(totalDamage);
-                    Invoke(nameof(DelayBlink), 3f);
+                    }
+                    else
+                    {
+
+                        // damage enemy
+                        int totalDamage = PlayerPrefs.GetInt("AttackPower", PlayerStats.Instance.AttackPower);
+
+                        if (skillOption != null && skillOption.attack == true)
+                        {
+                            totalDamage += PlayerPrefs.GetInt("MagicPower", PlayerStats.Instance.MagicPower);
+                            skillOption.attack = false;
+                        }
+
+                        healthSystem.TakeDamage(totalDamage);
+                        Invoke(nameof(DelayBlink), 3f);
+                    }
                 }
                 else
                 {
@@ -81,7 +90,6 @@ public class TimerGame : MonoBehaviour
                     else
                     {
                         // dmg player
-
                         int rnd = Random.Range(10, 25);
                         PlayerStats.Instance.PHealth -= rnd;
                         PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);

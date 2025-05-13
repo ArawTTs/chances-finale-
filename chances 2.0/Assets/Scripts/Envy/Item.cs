@@ -138,6 +138,14 @@ public class Item : MonoBehaviour
                 gameManagerSloth.SlothAttack();
             }
         }
+        if (attackGluttony != null)
+        {
+            itemB = true;
+
+            attackGluttony.EnemyAnimAttack();
+
+            Invoke("GluttonyPlayGame", 1f);
+        }
         if (gameFlowManagerLust != null)
         {
             gameFlowManagerLust.PlayGame();
@@ -145,12 +153,6 @@ public class Item : MonoBehaviour
         if (gameManagerGreedPride != null)
         {
             gameManagerGreedPride.ReturnAnimation();
-        }
-        if (attackGluttony != null)
-        {
-            attackGluttony.EnemyAnimAttack();
-
-            Invoke("GluttonyPlayGame", 1f);
         }
         if (gameManagerWrath != null)
         {
