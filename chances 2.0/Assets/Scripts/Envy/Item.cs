@@ -153,6 +153,7 @@ public class Item : MonoBehaviour
         }
         if (gameFlowManagerLust != null)
         {
+            itemB = true;
             gameFlowManagerLust.PlayGame();
         }
         if (gameManagerWrath != null)

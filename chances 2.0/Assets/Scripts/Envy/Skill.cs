@@ -142,14 +142,34 @@ public class Skill : MonoBehaviour
 
             Invoke(nameof(ShieldIndi), 5f);
             Invoke(nameof(DelayReturnAllGnP), 5f);
+        }
+        if (gameFlowManagerLust != null)
+        {
+            gameFlowManagerLust.LustAnimation();
 
+            Invoke(nameof(AnimateShield), 2f);
+            Invoke(nameof(SkillShield), 5f);
+            skillOption.shield = false;
+            skillOption.HideShield();
+
+            Invoke(nameof(ShieldIndi), 5f);
+            Invoke(nameof(DelayReturnAllGnP), 5f);
 
         }
     }
 
     private void DelayReturnAllGnP()
     {
-        gameManagerGreedPride.ReturnAll();
+        if (gameManagerGreedPride != null)
+            gameManagerGreedPride.ReturnAll();
+
+        if (gameFlowManagerLust != null)
+        {
+            gameFlowManagerLust.LustTakeDmg();
+            gameFlowManagerLust.ReturnAll();
+        }
+
+
 
     }
 

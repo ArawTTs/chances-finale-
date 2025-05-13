@@ -33,6 +33,7 @@ public class GameFlowManagerLust : MonoBehaviour
     private int currentLevel = 0;
     public GameObject gameover;
     public StartBlinkingAnim blink;
+    public Item item;
     void Start()
     {
         gameLife.DisableRhythm();
@@ -111,13 +112,13 @@ public class GameFlowManagerLust : MonoBehaviour
             int attackpower = PlayerPrefs.GetInt("AttackPower", PlayerStats.Instance.AttackPower);
 
             lustLife.TakeDamage(attackpower);
-            Invoke("WaitBlink", 2f);
-
             Invoke("ReturnAll", 4f);
+            Invoke("WaitBlink", 5f);
+
         }
         else if (number == 1)
         {
-            Invoke("PlayGame", 4f);
+            Invoke("PlayGame", 3.8f);
 
         }
     }
@@ -158,11 +159,23 @@ public class GameFlowManagerLust : MonoBehaviour
 
         musicAnalyzer.Play();
     }
+
+    public void LustAnimation()
+    {
+        HideAttack();
+        videos[1].SetActive(true);
+        Invoke("DelayLustAnim", 3f);
+    }
     private void DelayLustAnim()
     {
         videos[1].SetActive(false);
     }
+    public void LustTakeDmg()
+    {
+        lustLife.TakeDamage(10);
+        Invoke("WaitBlink", 1f);
 
+    }
 
     public void WinLevel()
     {
@@ -181,9 +194,15 @@ public class GameFlowManagerLust : MonoBehaviour
             totalDamage += PlayerPrefs.GetInt("MagicPower", PlayerStats.Instance.MagicPower);
             skillOption.attack = false;
         }
-
-        lustLife.TakeDamage(totalDamage);
-        Invoke("WaitBlink", 2f);
+        if (item.itemB)
+        {
+            item.itemB = false;
+        }
+        else
+        {
+            lustLife.TakeDamage(totalDamage);
+            Invoke("WaitBlink", 2f);
+        }
 
         if (beatScroller.musicAnalyzer1GO.activeSelf)
         {
@@ -217,10 +236,8 @@ public class GameFlowManagerLust : MonoBehaviour
         gameManagerRhythm.currMultiplier = 1;
 
 
-        int random0to10 = Random.Range(15, 30);
+        int random0to10 = Random.Range(15, 25);
 
-        PlayerStats.Instance.PHealth -= random0to10;
-        PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
 
         if (skillOption.shield == false)//immune damage if shielded
         {
@@ -228,6 +245,7 @@ public class GameFlowManagerLust : MonoBehaviour
 
             PlayerStats.Instance.PHealth -= random0to10;
             PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
+
 
             // ***
 
@@ -267,7 +285,6 @@ public class GameFlowManagerLust : MonoBehaviour
 
         returnAll.ToList().ForEach(button =>
         {
-            Debug.Log("worked");
 
             button.SetActive(true);
         });

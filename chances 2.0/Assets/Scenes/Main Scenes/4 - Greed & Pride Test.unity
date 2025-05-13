@@ -1623,7 +1623,7 @@ MonoBehaviour:
   gameManagerSloth: {fileID: 0}
   gameManagerGreedPride: {fileID: 656989145}
   gameManagerWrath: {fileID: 0}
-  item: {fileID: 0}
+  item: {fileID: 619560305}
   miniGameLife: {fileID: 155429293}
   bar: {fileID: 212505990}
   initialCountdownDuration: 20
