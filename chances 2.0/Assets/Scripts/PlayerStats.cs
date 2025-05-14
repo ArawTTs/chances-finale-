@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -40,6 +41,14 @@ public class PlayerStats : MonoBehaviour
         set => _allocationStats = Mathf.Clamp(value, 0, 10);
     }
     public int Money = 100;
+
+    void Update()
+    {
+        if (PlayerLife <= 0 && PHealth <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
     private void Awake()
     {
