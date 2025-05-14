@@ -53489,6 +53489,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 495983618}
     m_Modifications:
+    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -230
+      objectReference: {fileID: 0}
     - target: {fileID: 2443670819651565998, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: SceneLoader
       value: 

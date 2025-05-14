@@ -386,7 +386,7 @@ public class GameManagerSloth : MonoBehaviour
         slothAttack.SetActive(false);
     }
 
-    private void LevelChecker()
+    public void LevelChecker()
     {
         float healthPercent = (float)slothLife.health / slothLife.maxHealth;
 
@@ -396,7 +396,7 @@ public class GameManagerSloth : MonoBehaviour
 
             slothGameplay[0].SetActive(true);
             timeCodeGO.SetActive(true);
-            timeCode.initialCountdownDuration = 20f;
+            timeCode.countdownTimer = 20f;
             timeCode.totalTime = 20f;
         }
         else if (healthPercent >= 0.33f)
@@ -405,17 +405,17 @@ public class GameManagerSloth : MonoBehaviour
 
             slothGameplay[1].SetActive(true);
             timeCodeGO.SetActive(true);
-            timeCode.initialCountdownDuration = 35f;
-            timeCode.totalTime = 35f;
+            timeCode.countdownTimer = 45f;
+            timeCode.totalTime = 45f;
 
         }
         else if (healthPercent > 0f)
         {
-            timeCode.initialCountdownDuration = 50f;
+            timeCode.countdownTimer = 65f;
             slothGameplay[2].SetActive(true);
             timeCodeGO.SetActive(true);
             Box[2].SetActive(true);
-            timeCode.totalTime = 50f;
+            timeCode.totalTime = 65f;
 
 
         }

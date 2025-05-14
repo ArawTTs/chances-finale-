@@ -10,11 +10,13 @@ public class SlothSetActiveChecker : MonoBehaviour
     public GameObject player;
     public Transform playerT;
     public Transform[] boxT;
+    public GameManagerSloth gameManagerSloth;
 
 
     void OnEnable()
     {
         Conditions();
+        gameManagerSloth.LevelChecker();
     }
 
     void Conditions()
