@@ -24,8 +24,6 @@ public class GameManagerSloth : MonoBehaviour
     [SerializeField] private GameObject ckenemy;
     [SerializeField] private GameObject[] ckIdleenmy;
     [SerializeField] private GameObject[] ckAttackenemy;
-    [SerializeField] private GameObject ckenemyLife;
-    [SerializeField] private GameObject senemyLife;
     [SerializeField] private GameObject slothBoss;
     [SerializeField] private GameObject slothIdle;
     [SerializeField] public GameObject slothAttack;
@@ -159,6 +157,7 @@ public class GameManagerSloth : MonoBehaviour
             }
 
             cockroachLife.TakeDamage(Random.Range(totalDamage, totalDamage + 10));
+            Invoke(nameof(AnimateBlinkCk), 3f);
 
             //***
             Invoke("AnimateCKAttack", 2.5f);
@@ -167,7 +166,6 @@ public class GameManagerSloth : MonoBehaviour
         else
         {
 
-            ckenemyLife.SetActive(false);
             ckenemy.SetActive(false);
 
             if (slothLife.health != 0)
@@ -260,6 +258,8 @@ public class GameManagerSloth : MonoBehaviour
         playerBack.SetActive(true);
         playerFront.SetActive(false);
 
+        AttackCk();
+
         Invoke("DisableAttackCk", 1.0f);
 
 
@@ -273,7 +273,7 @@ public class GameManagerSloth : MonoBehaviour
             PlayerStats.Instance.PHealth -= damageToPlayer;
             PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
 
-            Invoke(nameof(PlayerBlinkAnim), 2f);
+            Invoke(nameof(PlayerBlinkAnim), 1f);
             // ***
         }
         else

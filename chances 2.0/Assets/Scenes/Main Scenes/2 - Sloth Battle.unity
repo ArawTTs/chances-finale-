@@ -2166,8 +2166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 189650617}
-  health: 150
-  maxHealth: 150
+  health: 100
+  maxHealth: 100
 --- !u!1 &211013115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2702,7 +2702,6 @@ MonoBehaviour:
   playerBack: {fileID: 1904374331}
   playerSkill: {fileID: 316144476}
   playerShield: {fileID: 25950934}
-  enemyLife: {fileID: 126680808}
   ckenemyLife: {fileID: 1829825448}
   skillOpt: {fileID: 2072825758}
   PSkills:
@@ -5519,8 +5518,6 @@ MonoBehaviour:
   ckAttackenemy:
   - {fileID: 1221451131}
   - {fileID: 1823420496}
-  ckenemyLife: {fileID: 472573311}
-  senemyLife: {fileID: 126680808}
   slothBoss: {fileID: 1272968243}
   slothIdle: {fileID: 580945502}
   slothAttack: {fileID: 462797652}
@@ -5549,7 +5546,6 @@ MonoBehaviour:
   - {fileID: 1829825448}
   - {fileID: 2053071064}
   - {fileID: 1272968243}
-  - {fileID: 1829825448}
   Box:
   - {fileID: 1723194472}
   - {fileID: 1134448670}
@@ -14163,6 +14159,7 @@ MonoBehaviour:
   gameManagerSloth: {fileID: 639300196}
   gameManagerGreedPride: {fileID: 0}
   gameManagerWrath: {fileID: 0}
+  item: {fileID: 1394854029}
   miniGameLife: {fileID: 0}
   bar: {fileID: 235697694}
   initialCountdownDuration: 20

@@ -23,7 +23,6 @@ public class Skill : MonoBehaviour
     [SerializeField] private GameObject playerBack;
     [SerializeField] private GameObject playerSkill;
     [SerializeField] private GameObject playerShield;
-    [SerializeField] private GameObject enemyLife;
     [SerializeField] private GameObject ckenemyLife;
     [SerializeField] private GameObject skillOpt;
     public GameObject[] PSkills;
@@ -52,14 +51,14 @@ public class Skill : MonoBehaviour
     public void AnimateSkill()
     {
         PSkills[0].SetActive(true);
-        enemyLife.SetActive(false);
+        // enemyLife.SetActive(false);
         ToHide[3].SetActive(false);
     }
 
     public void AnimateShield()
     {
         PSkills[1].SetActive(true);
-        enemyLife.SetActive(false);
+        // enemyLife.SetActive(false);
         ToHide[3].SetActive(false);
     }
 
@@ -67,7 +66,7 @@ public class Skill : MonoBehaviour
     {
         playerBack.SetActive(true);
         PSkills[0].SetActive(false);
-        enemyLife.SetActive(false);
+        // enemyLife.SetActive(false);
 
         ExecuteManagerActions();
         // ReturnAll();
@@ -77,7 +76,7 @@ public class Skill : MonoBehaviour
     {
         playerBack.SetActive(true);
         PSkills[1].SetActive(false);
-        enemyLife.SetActive(true);
+        // enemyLife.SetActive(true);
         ReturnAll();
 
     }

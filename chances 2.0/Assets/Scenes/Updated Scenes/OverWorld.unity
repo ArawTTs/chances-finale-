@@ -3056,7 +3056,7 @@ GameObject:
   - component: {fileID: 79064382}
   - component: {fileID: 79064388}
   m_Layer: 0
-  m_Name: sign2 (1)
+  m_Name: Wrath Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6512,9 +6512,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":220.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-    seems it still early, maybe i should wait inside the ha-","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":227.5,"yPos":170},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAHHHHHHHH!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Random
-    Screem","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":479.5,"yPos":172},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":124.800049,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    seems it still early, maybe i should wait inside the ha-","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":131.800049,"yPos":169.999939},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAHHHHHHHH!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Random
+    Screem","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":383.800323,"yPos":171.999817},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"What
     the? it came from the right side of the school","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Ezekiel
@@ -6544,9 +6544,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1.7909504, z: 2.3051152}
   m_Center: {x: 0, y: 0.39547524, z: -0.6525576}
@@ -19859,7 +19859,7 @@ Transform:
   m_GameObject: {fileID: 674808013}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1229.7699, y: -41.84, z: -270.34}
+  m_LocalPosition: {x: -501.5, y: 0.4, z: -109.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24088,7 +24088,7 @@ Transform:
   m_GameObject: {fileID: 842429899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -633.75, y: -41.409977, z: -248.23001}
+  m_LocalPosition: {x: -257.48, y: 0.58, z: -100.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28106,7 +28106,7 @@ Transform:
   m_GameObject: {fileID: 1019516395}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105.87, y: -63.29, z: 286.44}
+  m_LocalPosition: {x: 67.97, y: -20.88, z: 60.91}
   m_LocalScale: {x: 0.5102938, y: 0.8674201, z: 0.8823786}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28223,9 +28223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":84.5,"yPos":171},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"looks
-    dangerous, maybe i shouldn''t","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":347.5,"yPos":176},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"eh..
-    what''s the worst thing it could have happen","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":220.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-11.1999512,"yPos":170.999908},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"looks
+    dangerous, maybe i shouldn''t","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":251.7998,"yPos":175.999908},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"eh..
+    what''s the worst thing it could have happen","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":124.800049,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A
     hole? should i enter?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -36703,7 +36703,7 @@ Transform:
   m_GameObject: {fileID: 1360813589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1410.6399, y: -41.55, z: -79.67}
+  m_LocalPosition: {x: -573.1, y: 0.76, z: -32.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40761,7 +40761,7 @@ Transform:
   m_GameObject: {fileID: 1527282377}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -595.88, y: -42, z: 135.52}
+  m_LocalPosition: {x: -241.91, y: 0.43, z: 54.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
