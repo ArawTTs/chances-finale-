@@ -394,19 +394,19 @@ public class GameManagerSloth : MonoBehaviour
         {
             Box[0].SetActive(true);
 
-            slothGameplay[0].SetActive(true);
-            timeCodeGO.SetActive(true);
             timeCode.countdownTimer = 20f;
+            timeCodeGO.SetActive(true);
             timeCode.totalTime = 20f;
+            slothGameplay[0].SetActive(true);
         }
         else if (healthPercent >= 0.33f)
         {
             Box[1].SetActive(true);
 
-            slothGameplay[1].SetActive(true);
-            timeCodeGO.SetActive(true);
             timeCode.countdownTimer = 45f;
+            timeCodeGO.SetActive(true);
             timeCode.totalTime = 45f;
+            slothGameplay[1].SetActive(true);
 
         }
         else if (healthPercent > 0f)
