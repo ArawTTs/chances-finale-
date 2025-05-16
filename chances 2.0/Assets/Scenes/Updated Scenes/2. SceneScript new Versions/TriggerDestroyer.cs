@@ -9,10 +9,10 @@ public class TriggerDestroyer : MonoBehaviour
     void Awake()
     {
         // Check if the object was already destroyed
-        if (PlayerPrefs.GetInt(objectID, 0) == 1)
-        {
-            Destroy(gameObject);
-        }
+        // if (PlayerPrefs.GetInt(objectID, 0) == 1)
+        // {
+        //     Destroy(gameObject);
+        // }
     }
 
     void OnTriggerEnter(Collider other)
@@ -25,7 +25,7 @@ public class TriggerDestroyer : MonoBehaviour
         }
     }
 
-    public void destory()
+    public void destroy()
     {
         PlayerPrefs.SetInt(objectID, 1); // Mark as destroyed
         PlayerPrefs.Save();              // Save to disk

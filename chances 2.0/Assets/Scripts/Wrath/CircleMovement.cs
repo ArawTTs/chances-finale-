@@ -11,7 +11,6 @@ public class CircleMovement : MonoBehaviour
     public Transform positionB;
     private bool isRotating = false;
     private bool isClockwise = false;
-    private bool isAtPositionA = true;
     private bool canTeleport = true;
     [SerializeField] private float teleportCooldown = 0.5f;
     public TimeCode timeCode;
@@ -99,7 +98,7 @@ public class CircleMovement : MonoBehaviour
                 gameManagerWrath.EnemyBlink();
             }
 
-
+            timeCode.countdownTimer = timeCode.initialCountdownDuration;
             gameManagerWrath.ReturnAll();
         }
         if (collision.gameObject.CompareTag("switch") && canTeleport)

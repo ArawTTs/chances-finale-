@@ -20,23 +20,15 @@ public class CheatCode : MonoBehaviour
 
     void ToggleCheat()
     {
-        bool isActive = cheat.activeSelf;
-        cheat.SetActive(!isActive);
+        cheat.SetActive(!cheat.activeSelf);
     }
 
     public void OnClickUpdateStats()
     {
-        UpdateStat(AP.text, "AttackPower", out int attackPower);
-        PlayerStats.Instance.AttackPower = attackPower;
-
-        UpdateStat(MP.text, "MagicPower", out int magicPower);
-        PlayerStats.Instance.MagicPower = magicPower;
-
-        UpdateStat(maxPHealth.text, "MaxPHealth", out int maxHealth);
-        PlayerStats.Instance.MaxPHealth = maxHealth;
-
-        UpdateStat(money.text, "Money", out int playerMoney);
-        PlayerStats.Instance.Money = playerMoney;
+        PlayerStats.Instance.AttackPower = UpdateStat(AP.text, "AttackPower", PlayerStats.Instance.AttackPower);
+        PlayerStats.Instance.MagicPower = UpdateStat(MP.text, "MagicPower", PlayerStats.Instance.MagicPower);
+        PlayerStats.Instance.MaxPHealth = UpdateStat(maxPHealth.text, "MaxPHealth", PlayerStats.Instance.MaxPHealth);
+        PlayerStats.Instance.Money = UpdateStat(money.text, "Money", PlayerStats.Instance.Money);
     }
 
     public void OnClickRestoreHnS()
@@ -47,6 +39,7 @@ public class CheatCode : MonoBehaviour
         PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
         PlayerPrefs.SetInt("PSkill", PlayerStats.Instance.PSkill);
     }
+
     public void OnClickRestoreItems()
     {
         ItemStats.Instance.smallBottle = 10;
@@ -58,21 +51,21 @@ public class CheatCode : MonoBehaviour
         PlayerPrefs.SetInt("LargeBottle", ItemStats.Instance.largeBottle);
         PlayerPrefs.SetInt("SmallMedkit", ItemStats.Instance.smallMedkit);
         PlayerPrefs.SetInt("LargeMedkit", ItemStats.Instance.largeMedkit);
-
     }
-    void UpdateStat(string input, string key, out int statField)
+
+    int UpdateStat(string input, string key, int currentValue)
     {
         string cleaned = Regex.Replace(input, "[^0-9]", "");
 
         if (!string.IsNullOrEmpty(cleaned))
         {
-            int.TryParse(cleaned, out statField);
-            PlayerPrefs.SetInt(key, statField);
+            int newValue = int.Parse(cleaned);
+            PlayerPrefs.SetInt(key, newValue);
+            return newValue;
         }
         else
         {
-            statField = PlayerPrefs.GetInt(key, 0); // Keep old value
+            return currentValue; // Keep old value
         }
     }
-
 }

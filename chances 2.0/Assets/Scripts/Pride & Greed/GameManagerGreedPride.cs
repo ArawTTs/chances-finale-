@@ -23,7 +23,6 @@ public class GameManagerGreedPride : MonoBehaviour
     [SerializeField] private GameObject greedBoss;
 
     public bool check = false;
-    private bool hasDied = false;
 
     public GameObject[] playerVids;
     public GameObject[] enemyVids;

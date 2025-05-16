@@ -13,9 +13,14 @@ public static class CameraSwitcher
     }
     public static void SwitchCamera(CinemachineVirtualCamera camera)
     {
+        if (camera == null)
+        {
+            Debug.LogWarning("Camera Null");
+            return;
+        }
         camera.Priority = 10;
         ActiveCamera = camera;
-        
+
         foreach (CinemachineVirtualCamera c in cameras)
         {
             if (c != camera && c.Priority != 0)
@@ -26,14 +31,24 @@ public static class CameraSwitcher
     }
     public static void Register(CinemachineVirtualCamera camera)
     {
+        if (camera == null)
+        {
+            Debug.LogWarning("Camera Null");
+            return;
+        }
         cameras.Add(camera);
         Debug.Log("Camera registered: " + camera);
     }
 
     public static void Unregister(CinemachineVirtualCamera camera)
     {
+        if (camera == null)
+        {
+            Debug.LogWarning("Camera Null");
+            return;
+        }
         cameras.Remove(camera);
         Debug.Log("Camera unregistered: " + camera);
     }
-    
+
 }

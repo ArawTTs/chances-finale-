@@ -20,7 +20,6 @@ public class GameManagerWrath : MonoBehaviour
 
     [SerializeField] private GameObject game;
     [SerializeField] private GameObject wrathBoss;
-    private bool hasDied = false;
     public bool check = false;
     public GameObject[] playerVids;
     public GameObject[] playerAnimations;
@@ -44,10 +43,12 @@ public class GameManagerWrath : MonoBehaviour
         {
             gameover.SetActive(true);
 
-            PlayerStats.Instance.PHealth = PlayerStats.Instance.MaxPHealth;
             PlayerStats.Instance.PlayerLife--;
+            PlayerStats.Instance.PHealth = PlayerStats.Instance.MaxPHealth;
+
             PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
             PlayerPrefs.SetInt("PlayerLife", PlayerStats.Instance.PlayerLife);
+            PlayerPrefs.Save();
 
 
             Invoke("LoadOverWorld", 1.06f);
@@ -75,7 +76,7 @@ public class GameManagerWrath : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
-    void Onnable()
+    void OnEnable()
     {
         timeCode.countdownTimer = timeCode.totalTime;
     }
@@ -99,18 +100,16 @@ public class GameManagerWrath : MonoBehaviour
 
     private void RandomBattleOutcome()
     {
-        int number = Random.value < 0.5f ? 1 : 0;
+        int number = Random.value < 0.6f ? 1 : 0;
         playerVids[0].SetActive(false);
 
         if (number == 0)
         {
-            int totalDamage = PlayerPrefs.GetInt("AttackPower",
-            PlayerStats.Instance.AttackPower);
+            int totalDamage = PlayerStats.Instance.AttackPower;
 
             if (skillOption != null && skillOption.attack == true)
             {
-                totalDamage += PlayerPrefs.GetInt("MagicPower",
-                PlayerStats.Instance.MagicPower);
+                totalDamage += PlayerStats.Instance.MagicPower;
                 skillOption.attack = false;
             }
 
@@ -184,15 +183,19 @@ public class GameManagerWrath : MonoBehaviour
     {
 
         int damage = Random.Range(10, 20);
-        if (skillOption.shield == false)//immune damage if shielded
+        if (skillOption != null)
         {
-            PlayerStats.Instance.PHealth -= damage;
-            PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
 
-        }
-        else if (skillOption.shield == true)
-        {
-            skillOption.shield = false;
+            if (skillOption.shield == false)
+            {
+                PlayerStats.Instance.PHealth -= damage;
+                PlayerPrefs.SetInt("PHealth", PlayerStats.Instance.PHealth);
+
+            }
+            else
+            {
+                skillOption.shield = false;
+            }
         }
         blink.StartBlinking(0);
 
@@ -203,9 +206,9 @@ public class GameManagerWrath : MonoBehaviour
     {
         cameraSwitch.PrideLustCameraMiniGame();
         camera.orthographic = true;
-        // game.SetActive(true);
         int rnd = Random.Range(0, gameplays.Length);
-        Debug.Log(rnd);
+        timeCode.countdownTimer = timeCode.initialCountdownDuration;
+
         gameplays[rnd].SetActive(true);
 
     }

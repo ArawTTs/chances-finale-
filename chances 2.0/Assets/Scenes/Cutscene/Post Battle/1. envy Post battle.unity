@@ -435,6 +435,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &896113993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8323297101017163613, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+  m_PrefabInstance: {fileID: 415001587172161963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039174971
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +564,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1610,36 +1615,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 31
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":206.998978,"yPos":278.800018},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok","parentUIDs":[28],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":-1475.99988,"yPos":-129.200027},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    happen to Toni!?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-1669.99915,"yPos":-19.2000275},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"envy....
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1777.00085,"yPos":417.1994},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok","parentUIDs":[28],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":93.9999847,"yPos":9.200027},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    happened to you, Toni!?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-99.9993,"yPos":119.2},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"envy....
     one of the seven deadly sins that means....","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":-1750.99939,"yPos":123.799942},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"S-seven
-    deadly sins?!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":-1309.00012,"yPos":145.799957},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":".......","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":-1091.00061,"yPos":265.800018},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"if
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":-180.999542,"yPos":262.199219},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"S-seven
+    deadly sins?!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":260.999573,"yPos":284.199219},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":".......","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":478.999268,"yPos":404.199524},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"if
     one of the seven deadly sins is here... does that mean the other remaining exist
     in this world?","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-1044.00037,"yPos":16.7999725},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"maybe
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":525.9997,"yPos":155.2},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"maybe
     thats the reason why we are here to guide ezekiel, To defeat the seven deadly
     sins!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-858.0004,"yPos":202.800034},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"w-wait,
-    i did not sign up for this!","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-767.000549,"yPos":34.7999725},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Too
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":711.9996,"yPos":341.199341},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"w-wait,
+    i did not sign up for this!","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":802.9993,"yPos":173.1998},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Too
     late Ezekiel, you are already here. and if you ignore the task that the almighty
     gave you, you''ll transform yourself into a monster","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":-584.000549,"yPos":136.799927},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"uuhhh.....","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":-505.000427,"yPos":41.7999725},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"fine....","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":-294.000244,"yPos":146.799957},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Thats
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":985.9993,"yPos":275.199158},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"uuhhh.....","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":1065.00134,"yPos":180.1998},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"fine....","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":1276.00159,"yPos":285.199219},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Thats
     the spirit Ezekiel!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":-159.000885,"yPos":31.7999725},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Moving
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":1411.00085,"yPos":170.1998},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Moving
     on now, all we need to do is to cleanse this person to get rid of envy that posesses
     him.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":-1856.99988,"yPos":245.800018},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"when
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":-287.000366,"yPos":384.199524},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"when
     the person who is possessed with one of the deadly sins, they will have a strong
     desire that is associate with their sins.","parentUIDs":[12,12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-1592.99963,"yPos":401.800018},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"and
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-22.9997864,"yPos":540.198669},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"and
     your friend has been envious of you ezekiel.","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":-1507.99963,"yPos":271.800018},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"huh?!
-    he is envious of me? why would he be envious of me!? he has far better than me?","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":4.99937439,"yPos":141.799942},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"now
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":62.00023,"yPos":410.199463},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"huh?!
+    he is envious of me? why would he be envious of me!? he has far better than me?","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekeil","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":1575.0011,"yPos":280.199219},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"now
     hold your hand to his forehead ezekiel and take a deep breath. we''re gonna cleanse
     him with our fire","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":-1869.99988,"yPos":422.799957},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"but
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":-300.0005,"yPos":561.198547},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"but
     the sins will only possess to those people who has a strong or deep desire","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
     wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -1669,43 +1674,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1082635110}
-        m_TargetAssemblyTypeName: convotonextscene, Assembly-CSharp
-        m_MethodName: ActivateTransition
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1811134982}
-        m_TargetAssemblyTypeName: ConvoAdderValue, Assembly-CSharp
-        m_MethodName: addValue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1811134984}
-        m_TargetAssemblyTypeName: AddEvent, Assembly-CSharp
-        m_MethodName: ForDaEvent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &415001587172161963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1726,10 +1695,58 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1901206228}
+    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 415001587172161964}
+    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1901206228}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 415001587172161964}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1815,6 +1832,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -1822,6 +1843,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 415001587172161965}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 896113993}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1839,6 +1868,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: ForDaEvent
       objectReference: {fileID: 0}
@@ -1847,12 +1884,20 @@ PrefabInstance:
       value: addValue
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: convotonextscene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: AddEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: ConvoAdderValue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1866,11 +1911,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skip Setting post battle
       objectReference: {fileID: 0}
+    - target: {fileID: 8323297101017163613, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+--- !u!1 &415001587172161964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3628965021525100415, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+  m_PrefabInstance: {fileID: 415001587172161963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &415001587172161965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2443670819651565998, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
+  m_PrefabInstance: {fileID: 415001587172161963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60154a4155a77e54a9efddbfe2582163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5818165735230586599
 PrefabInstance:
   m_ObjectHideFlags: 0

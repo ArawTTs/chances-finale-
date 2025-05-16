@@ -8,7 +8,7 @@ namespace DialogueEditor
 {
     public class ConversationManager : MonoBehaviour
     {
-        
+
         private enum eState
         {
             TransitioningDialogueBoxOn,
@@ -40,8 +40,9 @@ namespace DialogueEditor
         public Sprite OptionImage;
         public bool OptionImageSliced;
         public bool AllowMouseInteraction;
+        private bool isTalking = false;
 
-        private bool isConversationActive = false;
+        public bool isConversationActive = false;
 
         // Non-User facing 
         // Not exposed via custom inspector
@@ -76,7 +77,7 @@ namespace DialogueEditor
         public int m_targetScrollTextCount;
         private eState m_state;
         private float m_stateTime;
-        
+
         private Conversation m_conversation;
         private SpeechNode m_currentSpeech;
         private OptionNode m_selectedOption;
@@ -139,9 +140,12 @@ namespace DialogueEditor
                     TransitioningDialogueBoxOff_Update();
                     break;
             }
+
+            if (isTalking)
+            {
+
+            }
         }
-
-
 
         //--------------------------------------
         // Public functions
@@ -149,7 +153,8 @@ namespace DialogueEditor
 
         public void StartConversation(NPCConversation conversation)
         {
-            isConversationActive= true;
+            isTalking = true;
+            isConversationActive = true;
 
             m_conversation = conversation.Deserialize();
             if (OnConversationStarted != null)
@@ -225,7 +230,7 @@ namespace DialogueEditor
                 LogWarning("parameter \'" + paramName + "\' does not exist.");
             }
         }
-        
+
         public void SetBool(string paramName, bool value)
         {
             eParamStatus status;
@@ -556,7 +561,7 @@ namespace DialogueEditor
             else
             {
                 SetState(eState.TransitioningOptionsOn);
-            }            
+            }
         }
 
 
@@ -639,7 +644,7 @@ namespace DialogueEditor
 
             DialoguePanel.gameObject.SetActive(true);
             OptionsPanel.gameObject.SetActive(true);
-            
+
             PController.Walking = false;
 
             if (BackgroundImage != null)
@@ -664,8 +669,9 @@ namespace DialogueEditor
 
             PController.Walking = true;
 
-            
+
             SetState(eState.Off);
+            isTalking = false;
 #if UNITY_EDITOR
             // Debug.Log("[ConversationManager]: Conversation UI off.");
 #endif
@@ -709,7 +715,7 @@ namespace DialogueEditor
                         {
                             uiOption.SetupButton(UIConversationButton.eButtonType.Speech, next, continueFont: m_conversation.ContinueFont);
                         }
-                        
+
                     }
                     else if (m_currentSpeech.ConnectionType == Connection.eConnectionType.None)
                     {
@@ -865,6 +871,7 @@ namespace DialogueEditor
         }
         public bool ConversationActive()
         {
+
             return m_conversation != null && m_currentSpeech != null;
         }
         public void SkipConversation()

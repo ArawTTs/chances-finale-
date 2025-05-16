@@ -875,6 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94237802}
   - component: {fileID: 94237801}
+  - component: {fileID: 94237803}
   m_Layer: 0
   m_Name: Beat 2 - (normal)
   m_TagString: Untagged
@@ -928,6 +929,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94237803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94237800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9c5937ae95a034f921c309c98ff348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 1099095159}
 --- !u!1 &94920528
 GameObject:
   m_ObjectHideFlags: 0
@@ -6582,7 +6596,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0f88da10b5d8bd74bab6a68bb3d8fb78, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c48813843f3f6fe4f91644ce271752ed, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9220,6 +9234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1493329781}
   - component: {fileID: 1493329780}
+  - component: {fileID: 1493329782}
   m_Layer: 0
   m_Name: Beat 3 - (hard)
   m_TagString: Untagged
@@ -9273,6 +9288,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493329782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493329779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9c5937ae95a034f921c309c98ff348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 1099095159}
 --- !u!1 &1538386723
 GameObject:
   m_ObjectHideFlags: 0
@@ -12256,6 +12284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051127024}
   - component: {fileID: 2051127023}
+  - component: {fileID: 2051127025}
   m_Layer: 0
   m_Name: Beat 1 - (easy)
   m_TagString: Untagged
@@ -12309,6 +12338,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2051127025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051127022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9c5937ae95a034f921c309c98ff348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 1099095159}
 --- !u!1 &2053107316
 GameObject:
   m_ObjectHideFlags: 0

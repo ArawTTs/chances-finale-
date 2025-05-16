@@ -1225,7 +1225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Go to the City Hall and enter the big blue building.
+  m_text: the city hall lies clues to what's happening.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2041,7 +2041,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 636337193}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TriggerDestroyer, Assembly-CSharp
         m_MethodName: destory
         m_Mode: 1
@@ -2948,6 +2948,10 @@ GameObject:
   - component: {fileID: 77109844}
   - component: {fileID: 77109843}
   - component: {fileID: 77109842}
+  - component: {fileID: 77109848}
+  - component: {fileID: 77109847}
+  - component: {fileID: 77109846}
+  - component: {fileID: 77109845}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -3038,6 +3042,82 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 21300000, guid: 40f9b4e0b25be4a498f4094854f2faa8, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &77109845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77109840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 14
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 21300000, guid: 40f9b4e0b25be4a498f4094854f2faa8, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &77109846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77109840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 11
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 21300000, guid: 69ea184db625737448cbedab109ef17e, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &77109847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77109840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 9
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 21300000, guid: 40f9b4e0b25be4a498f4094854f2faa8, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &77109848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77109840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 8
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 21300000, guid: 2c85875c7e0752640a20d77bfea8fe36, type: 3}
   Audio: {fileID: 0}
 --- !u!1 &79064380
 GameObject:
@@ -4951,7 +5031,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 10.140282, y: -12.4}
-  m_SizeDelta: {x: 54.46076, y: 50}
+  m_SizeDelta: {x: 50.58113, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &150944519
 MonoBehaviour:
@@ -4973,7 +5053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the market building and enter to meet mom.
+  m_text: Head to the market building. Enter to talk to mom.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -6187,8 +6267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":187.199677},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"WHAT''S
-    GOING ON?!?","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":211,"yPos":187.1997},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"WHAT''S
+    GOING ON?!?","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":204,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
     the-!?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -6511,10 +6591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 3
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":124.800049,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-    seems it still early, maybe i should wait inside the ha-","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":131.800049,"yPos":169.999939},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAHHHHHHHH!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Random
-    Screem","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":383.800323,"yPos":171.999817},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+  CurrentIDCounter: 4
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":391.600037,"yPos":303.000031},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":135.199982,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    seems it still early, maybe i should wait inside the ha-","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":142.199982,"yPos":169.999939},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAHHHHHHHH!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Random
+    Screem","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":394.2003,"yPos":171.999817},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"What
     the? it came from the right side of the school","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Ezekiel
@@ -6524,6 +6604,7 @@ MonoBehaviour:
   - {fileID: 1872455103}
   - {fileID: 1872455102}
   - {fileID: 1872455101}
+  - {fileID: 1872455104}
   ContinueFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   EndConversationFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Event:
@@ -7563,7 +7644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the Diner that has been surrounded by tall buildings.
+  m_text: head to the diner. head down and ask around if they know where it is.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -7949,9 +8030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 5
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":316,"yPos":335.8},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[3],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Stay
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":294.200134,"yPos":335.7998},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[3],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":135.199982,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Stay
     clear kid, this fence leads to the forest.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
-    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":231.5,"yPos":196},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Some
+    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":209.699982,"yPos":195.999924},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Some
     kid went ahead before I could warn him. I haven''t seen him since.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
     Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -11471,7 +11552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the mountain below the club.
+  m_text: Head to the mountain and search for a sign of what's happening.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -11548,6 +11629,110 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393709137}
   m_CullTransparentMesh: 1
+--- !u!1001 &397381293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1596069020}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 503.4881
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 232.34477
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 232.34477
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -277.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.07
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4999993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4999993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_Name
+      value: HOUSE (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 397381296}
+  m_SourcePrefab: {fileID: 100100000, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+--- !u!4 &397381294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+  m_PrefabInstance: {fileID: 397381293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &397381295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+  m_PrefabInstance: {fileID: 397381293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &397381296
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397381295}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
 --- !u!1 &403177125
 GameObject:
   m_ObjectHideFlags: 0
@@ -12495,7 +12680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":160,"yPos":131},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":216.6,"yPos":171.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":213.6,"yPos":62.8000031},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     Market should be on the left. I should head there","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -13180,6 +13365,14 @@ PrefabInstance:
       propertyPath: overworldCam
       value: 
       objectReference: {fileID: 260928398}
+    - target: {fileID: 8775323224599447916, guid: a5e5899f9c53e9048b2e02ad12e5926d, type: 3}
+      propertyPath: dialogueTrigger
+      value: 
+      objectReference: {fileID: 1429674989}
+    - target: {fileID: 8775323224599447916, guid: a5e5899f9c53e9048b2e02ad12e5926d, type: 3}
+      propertyPath: conversationManager
+      value: 
+      objectReference: {fileID: 756693971}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15084,16 +15277,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 12
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1520.79968,"yPos":273.400024},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A-alice......","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":204.499756,"yPos":263},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    remember Alice.....","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":489.4995,"yPos":133},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"calm...
-    cheerful....","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":627.499756,"yPos":274},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"But
-    why does it hurt when im trying to remember her?......","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezkiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":809.499634,"yPos":141},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1567.79785,"yPos":273.400146},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":204,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A-alice......","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":251.499786,"yPos":262.999939},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    remember Alice.....","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":536.4997,"yPos":133.000031},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"calm...
+    cheerful....","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":674.500061,"yPos":274.000122},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+    why does it hurt when im trying to remember her?......","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezkiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":856.5,"yPos":141},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
     you ok Ezekiel?","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":934.499634,"yPos":284},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":".....
-    I''m ok. i feel a bit light headed after those cleansing","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1106.49939,"yPos":144},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Then
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":981.4999,"yPos":284.000122},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":".....
+    I''m ok. i feel a bit light headed after those cleansing","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1153.49927,"yPos":143.999985},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Then
     Shall we take a rest for a moment?","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1223.49927,"yPos":265},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"no,
-    we can still keep going","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1412.49951,"yPos":148},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"*whispers*
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1270.49792,"yPos":265},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"no,
+    we can still keep going","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1459.49756,"yPos":147.999969},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"*whispers*
     I need answers....","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -15766,7 +15959,7 @@ Transform:
   m_GameObject: {fileID: 543339293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.658, y: 9.01, z: 32.84}
+  m_LocalPosition: {x: 72.97, y: -20.69, z: 57.06}
   m_LocalScale: {x: 0.24198316, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15786,12 +15979,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 7
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":236.5,"yPos":49},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"THERE''S
-    UNEXPECTED WALL THAT LEADS TO THE FOREST","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"OFFICER","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":216},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"BE
-    CAUTIOUS AND STAY AWAY FROM THE HOLE. THERE MIGHT BE SOME WILD ANIMALS THAT APPEAR
-    AND ATTACK YOU","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"OFFICER","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":767,"yPos":230},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"OH,
-    THEN WE SHOULD HEAD INSIDE SO WE CAN FIND OUR SITS EARLY AND PREPARE OURSELVES","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"NPC","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 15
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":131.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Stay
+    clear kid, this fence leads to the forest.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
+    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":173.0994,"yPos":189.000137},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Some
+    kid went ahead before I could warn him. I haven''t seen him since.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
+    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":662.099731,"yPos":203.0001},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"OH,
+    THEN WE SHOULD HEAD INSIDE SO WE CAN FIND OUR SITS EARLY AND PREPARE OURSELVES","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"NPC","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":166.399445,"yPos":312.000061},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Dou
+    know what happened to toni?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":389.5982,"yPos":324.000031},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+    kid, i believe that WAS toni.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
+    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":603.198364,"yPos":324.800079},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Toni!
+    What happened to toni?!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":592.7982,"yPos":438.399963},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Kid!
+    i said don''t go in there!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Officer
+    Gel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Ezekiel
   DefaultSprite: {fileID: 21300000, guid: 87880f42c8455b84ea46871c65d5cbf8, type: 3}
@@ -15800,6 +16000,10 @@ MonoBehaviour:
   - {fileID: 77109844}
   - {fileID: 77109843}
   - {fileID: 77109842}
+  - {fileID: 77109848}
+  - {fileID: 77109847}
+  - {fileID: 77109846}
+  - {fileID: 77109845}
   ContinueFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   EndConversationFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Event:
@@ -17589,7 +17793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the Office and enter the tall violet building.
+  m_text: talk to george. ask around if he is at the office.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -18551,7 +18755,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &636337189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18567,7 +18771,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -20130,49 +20334,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 34
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":3612.799,"yPos":403.800049},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"CLOSE","parentUIDs":[32],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"hehehehehe.....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":160,"yPos":127.999969},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":3659.78833,"yPos":403.800232},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"CLOSE","parentUIDs":[32],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":204,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"hehehehehe.....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":207,"yPos":127.999969},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     won''t let you take over him!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":160,"yPos":249.999939},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAARRRRRRRRGGGGHHHH!!!!","parentUIDs":[0,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":166,"yPos":383.000061},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"AH!
-    Ahhhh!!! *Blaaaauuurrrgghhhh*","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":438.000977,"yPos":50.99997},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Wha-
-    what was that!?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":467.000977,"yPos":183.999985},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Be
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":207,"yPos":249.999954},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAARRRRRRRRGGGGHHHH!!!!","parentUIDs":[0,1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":212.999756,"yPos":383.000244},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"AH!
+    Ahhhh!!! *Blaaaauuurrrgghhhh*","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":485.000549,"yPos":50.99997},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Wha-
+    what was that!?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":514.000549,"yPos":183.999969},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Be
     Not Afraid..","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":534.001953,"yPos":284.999878},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAAHHHHHH!!!!","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":728.001465,"yPos":64.99998},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"........","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":808.001465,"yPos":175.999985},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"W-WISP!?
-    T-they Exist?!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":998.4004,"yPos":317.399933},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":581.0015,"yPos":285},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAAAHHHHHH!!!!","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":775.0007,"yPos":64.99997},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"........","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":855.0008,"yPos":175.999969},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"W-WISP!?
+    T-they Exist?!","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1045.39966,"yPos":317.4001},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
     and we are here to guide you on your journey as you accomplish the task that
     the almighty has given to you","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1057.99878,"yPos":66.99998},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    Almighty!? w-wait does  that mean... my dream was real!?","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":1179.99854,"yPos":212.999939},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1104.99854,"yPos":66.99997},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    Almighty!? w-wait does  that mean... my dream was real!?","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":1226.99854,"yPos":212.999939},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
     and we were lucky that we made it in time to save you from your transformation","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":1337.99829,"yPos":78.99998},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Tr-
-    transform? I was transforming?","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":1472.99731,"yPos":257.3999},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":1384.99829,"yPos":78.99997},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Tr-
+    transform? I was transforming?","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":1519.99707,"yPos":257.3999},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes,
     although the entity inside you has calm down. it wont be too long before the
     entity inside of you wake up again","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1719.99854,"yPos":3},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":1766.99634,"yPos":3},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"It
     seems you don''t know that there is something lingering deep inside of you.","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":1956.99829,"yPos":-157.000031},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Hhhhmmmmmm....
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":2003.99561,"yPos":-157.000031},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Hhhhmmmmmm....
     wait.....","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":2212.997,"yPos":203.999985},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"The
-    School?","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":2429.99756,"yPos":63.9999771},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes.
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":2259.993,"yPos":203.999969},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    School?","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":2476.993,"yPos":63.99997},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes.
     it seems there might be some uncanny scent that wonder around your school.","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":2580.997,"yPos":240.999954},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Uncanny
-    scent?","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":2066.49756,"yPos":23},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":2627.99146,"yPos":240.999939},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Uncanny
+    scent?","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":2113.49414,"yPos":23},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     detect something bad and it came from that building over there?","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":1712.49854,"yPos":454.000122},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Lingering
-    desire!? I dont have any of those!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":1502.69727,"yPos":381.8},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":1759.49634,"yPos":454.000244},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Lingering
+    desire!? I dont have any of those!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":1549.697,"yPos":381.800171},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"It
     seems there''s a lingering desire deep inside of that causes you to transform
     at any moment","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":1768.49829,"yPos":335.999939},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"*aurgh*","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":1672.49829,"yPos":140.999985},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    the- It hurts all of a sudden....","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":2750.497,"yPos":95.99997},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":1815.49609,"yPos":336.000122},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"*aurgh*","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":1719.49792,"yPos":140.999985},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    the- It hurts all of a sudden....","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":28}],"EditorInfo":{"isRoot":false,"xPos":2797.488,"yPos":95.99997},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     wisps are able to detect scents that are not from this world.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":2914.49634,"yPos":226.999924},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"T-thats
-    useful.","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":3064.49756,"yPos":76.99998},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Hehehe,
+    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":2961.487,"yPos":226.999908},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"T-thats
+    useful.","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":3111.48779,"yPos":76.99997},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"Hehehe,
     it is.","parentUIDs":[28],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":3215.497,"yPos":225.999924},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"now,
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":3262.48657,"yPos":225.999908},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"now,
     now, we better get going. We might be able to find some answers too about your
     deep linger that causes your transformation.","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":3421.497,"yPos":100.999969},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"eeeeehhhh.....
-    ok?","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":3596.49658,"yPos":240.999954},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"......
+    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":3468.486,"yPos":100.999969},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"eeeeehhhh.....
+    ok?","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":3643.4856,"yPos":240.999939},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"......
     *whisper* that scent around that boy when transformed had a strong grudge around
     him.....","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
     Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -21471,8 +21675,8 @@ GameObject:
   - component: {fileID: 714874313}
   - component: {fileID: 714874312}
   - component: {fileID: 714874311}
-  - component: {fileID: 714874310}
-  - component: {fileID: 714874309}
+  - component: {fileID: 714874315}
+  - component: {fileID: 714874314}
   m_Layer: 0
   m_Name: School Event Trigger
   m_TagString: Untagged
@@ -21495,32 +21699,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543339294}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &714874309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714874307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56ec3dd21b901594f8fd7b40bf3776e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectID: 6
---- !u!114 &714874310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714874307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TestConversation: {fileID: 543339295}
 --- !u!65 &714874311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21540,8 +21718,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 6.4981236, y: 1, z: 1}
+  m_Center: {x: 1.1639526, y: 0, z: 0}
 --- !u!23 &714874312
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21592,6 +21770,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714874307}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &714874314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714874307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ec3dd21b901594f8fd7b40bf3776e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectID: 6
+--- !u!114 &714874315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714874307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestConversation: {fileID: 543339295}
 --- !u!1 &716138639
 GameObject:
   m_ObjectHideFlags: 0
@@ -21605,6 +21809,7 @@ GameObject:
   - component: {fileID: 716138642}
   - component: {fileID: 716138641}
   - component: {fileID: 716138640}
+  - component: {fileID: 716138645}
   m_Layer: 5
   m_Name: CityHall Button
   m_TagString: Untagged
@@ -21659,6 +21864,18 @@ MonoBehaviour:
       - m_Target: {fileID: 716138641}
         m_TargetAssemblyTypeName: ButtonTrigger, Assembly-CSharp
         m_MethodName: nextscene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 716138645}
+        m_TargetAssemblyTypeName: DestroyTrees, Assembly-CSharp
+        m_MethodName: destroyTressAct
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21740,6 +21957,19 @@ RectTransform:
   m_AnchoredPosition: {x: 960.00006, y: 139.19998}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &716138645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716138639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69a34e918b3519e46b25fb749e9d491f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trees: {fileID: 923224690}
 --- !u!1 &724455139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
@@ -22406,7 +22636,7 @@ Transform:
   m_GameObject: {fileID: 776605223}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6219691, y: -0, z: -0, w: 0.78304183}
-  m_LocalPosition: {x: 38.13, y: -21.74, z: 11.91}
+  m_LocalPosition: {x: 38.2, y: -22, z: 11.9}
   m_LocalScale: {x: 0.45866784, y: 0.45866784, z: 0.45866784}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23311,6 +23541,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815938518}
   m_CullTransparentMesh: 1
+--- !u!1 &817194509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817194510}
+  - component: {fileID: 817194513}
+  - component: {fileID: 817194512}
+  - component: {fileID: 817194511}
+  m_Layer: 0
+  m_Name: Lust tree2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817194510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817194509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7070567, y: -0, z: -0, w: 0.7071569}
+  m_LocalPosition: {x: -3.64, y: 1.12, z: -6.13}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 923224691}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &817194511
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817194509}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.02, y: 16.463163, z: 3.7}
+  m_Center: {x: -0.023763178, y: 8.170114, z: -0.00000047683713}
+--- !u!23 &817194512
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817194509}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73bbe2eddc020ab4ea7df80643aba264, type: 2}
+  - {fileID: 2100000, guid: 013ad5084de16c746b785efa91960805, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &817194513
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817194509}
+  m_Mesh: {fileID: 6239881831769578202, guid: bd9dea9f13c54a240a3efe0dca688e79, type: 3}
 --- !u!1 &817423275
 GameObject:
   m_ObjectHideFlags: 0
@@ -23912,7 +24248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 212503160}
+      - m_Target: {fileID: 1946078588}
         m_TargetAssemblyTypeName: convotrigger, Assembly-CSharp
         m_MethodName: Talk
         m_Mode: 1
@@ -24814,8 +25150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 2
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":152.8,"yPos":187.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
-    seems to be no customer in this restaurant. but its open?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"NPC","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":184.599991,"yPos":219.8},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":188.799988,"yPos":54},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+    seems to be no customer in this restaurant. but its open?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Gregory","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 42ac5e79e2d09a44fb0c56102d74b9fb, type: 3}
@@ -26955,6 +27291,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921279581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &923224690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923224691}
+  m_Layer: 0
+  m_Name: Trees
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &923224691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923224690}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -541.1, y: 0, z: -54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 817194510}
+  - {fileID: 955521021}
+  - {fileID: 1843262650}
+  m_Father: {fileID: 1685512570}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &937169927
 GameObject:
   m_ObjectHideFlags: 0
@@ -27033,7 +27403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 3
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":167.200012,"yPos":154.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":214.200012,"yPos":154.2},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"close.","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":204,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     should head to school right now before the ceremony starts.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -27427,6 +27797,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952163606}
   m_CullTransparentMesh: 1
+--- !u!1 &955521020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955521021}
+  - component: {fileID: 955521024}
+  - component: {fileID: 955521023}
+  - component: {fileID: 955521022}
+  m_Layer: 0
+  m_Name: Lust tree1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &955521021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955521020}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7070914, y: -0, z: -0, w: 0.7071222}
+  m_LocalPosition: {x: -2.69, y: 0.8, z: 3.02}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 923224691}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &955521022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955521020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.02, y: 16.463163, z: 3.7}
+  m_Center: {x: -0.023763178, y: 8.170114, z: -0.00000047683713}
+--- !u!23 &955521023
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955521020}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73bbe2eddc020ab4ea7df80643aba264, type: 2}
+  - {fileID: 2100000, guid: 013ad5084de16c746b785efa91960805, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &955521024
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955521020}
+  m_Mesh: {fileID: 6239881831769578202, guid: bd9dea9f13c54a240a3efe0dca688e79, type: 3}
 --- !u!1 &956190794
 GameObject:
   m_ObjectHideFlags: 0
@@ -27662,9 +28138,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999362139}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90.3, y: -71.4, z: 250.8}
-  m_LocalScale: {x: 8.826344, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543339294}
@@ -28357,9 +28833,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-11.1999512,"yPos":170.999908},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"looks
-    dangerous, maybe i shouldn''t","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":251.7998,"yPos":175.999908},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"eh..
-    what''s the worst thing it could have happen","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":124.800049,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-0.8000183,"yPos":170.999908},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"looks
+    dangerous, maybe i shouldn''t","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":262.199738,"yPos":175.999908},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"eh..
+    what''s the worst thing it could have happen","parentUIDs":[0],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":135.199982,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"A
     hole? should i enter?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -28527,7 +29003,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 636337193}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TriggerDestroyer, Assembly-CSharp
         m_MethodName: destory
         m_Mode: 1
@@ -29803,7 +30279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the School. Enter the hole at the right side of the building.
+  m_text: Head to the School. Toni should be around. Talk to the guard if he knows.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -31016,6 +31492,7 @@ GameObject:
   - component: {fileID: 1145710361}
   - component: {fileID: 1145710360}
   - component: {fileID: 1145710363}
+  - component: {fileID: 1145710364}
   m_Layer: 0
   m_Name: blocker
   m_TagString: Untagged
@@ -31032,7 +31509,7 @@ Transform:
   m_GameObject: {fileID: 1145710358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.590004, y: 0.512, z: 87.06}
+  m_LocalPosition: {x: 41.8, y: 0.512, z: 87.06}
   m_LocalScale: {x: 1, y: 1, z: 13.982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31122,6 +31599,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectID: 9
+--- !u!114 &1145710364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145710358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestConversation: {fileID: 191452422}
 --- !u!1001 &1155613425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33264,8 +33754,6 @@ GameObject:
   - component: {fileID: 1210159639}
   - component: {fileID: 1210159638}
   - component: {fileID: 1210159637}
-  - component: {fileID: 1210159636}
-  - component: {fileID: 1210159635}
   m_Layer: 0
   m_Name: School Event Trigger
   m_TagString: Untagged
@@ -33288,32 +33776,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1429674984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1210159635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210159633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56ec3dd21b901594f8fd7b40bf3776e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectID: 4
---- !u!114 &1210159636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210159633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TestConversation: {fileID: 1429674985}
 --- !u!65 &1210159637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35574,7 +36036,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Head to the Club and enter the small house.
+  m_text: head to the club. it's somewhere at the outskirts of the town.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -36687,14 +37149,13 @@ GameObject:
   - component: {fileID: 1360138339}
   - component: {fileID: 1360138338}
   - component: {fileID: 1360138343}
-  - component: {fileID: 1360138342}
   m_Layer: 0
   m_Name: Awakening Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1360138336
 Transform:
   m_ObjectHideFlags: 0
@@ -36781,19 +37242,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360138335}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1360138342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360138335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TestConversation: {fileID: 191452422}
 --- !u!114 &1360138343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37436,6 +37884,110 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4085542598650377539, guid: 747e589fb731c0d46aedc0a59edacd2a, type: 3}
+--- !u!1001 &1382921917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1596069020}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 503.4881
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 232.34477
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 232.34477
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -262.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4999993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.4999993
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      propertyPath: m_Name
+      value: HOUSE (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1382921920}
+  m_SourcePrefab: {fileID: 100100000, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+--- !u!4 &1382921918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+  m_PrefabInstance: {fileID: 1382921917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1382921919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
+  m_PrefabInstance: {fileID: 1382921917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1382921920
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382921919}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4493585093827132993, guid: 9fed9bfaa97bfc240b6c967bfbfcfc81, type: 3}
 --- !u!1 &1383645292
 GameObject:
   m_ObjectHideFlags: 0
@@ -38465,27 +39017,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":227.999878,"yPos":347},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-1880.6001,"yPos":45.2000122},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    was that?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":-1882.6001,"yPos":192.200012},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"She
-    looks familiar....","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":-1609.59985,"yPos":96.20001},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":2021.40088,"yPos":418.19986},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-87.20004,"yPos":116.399994},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    was that?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":-89.20004,"yPos":263.4},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"She
+    looks familiar....","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":183.8002,"yPos":167.4},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Are
     you ok Ezekiel?","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-1400.59985,"yPos":1.20001221},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"wait
-    you didn''t see that [Redacted!]","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":-1349.59961,"yPos":151.200012},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"uuhhhh...
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":392.800018,"yPos":72.3999939},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"wait
+    you didn''t see that [Redacted!]","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":443.800262,"yPos":222.4},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"uuhhhh...
     Ezekiel?","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":-1152.59961,"yPos":42.2000122},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"*in
-    thought* i- i cant say it for some reason..... i need answers...","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":-982.5998,"yPos":142.200012},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Ezekiel?
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":640.8003,"yPos":113.399994},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"*in
+    thought* i- i cant say it for some reason..... i need answers...","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":810.7998,"yPos":213.4},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Ezekiel?
     Are you ok? it seems you have about to say something","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":-823.5993,"yPos":8.200012},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I-
-    it''s nothing. We should hurry head to the next sins","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-619.5996,"yPos":129.200012},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"B-but
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":969.800537,"yPos":79.3999939},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I-
+    it''s nothing. We should hurry head to the next sins","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1173.80029,"yPos":200.4},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"B-but
     what about the ceremony? the cleanse gave you enough time to hold that transformation.
     so there still time to attend the ceremony","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-448.59967,"yPos":5.200012},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I-
-    it''s ok, i dont mind not attending.....","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":-343.600464,"yPos":127.200012},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"are
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1344.80029,"yPos":76.3999939},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I-
+    it''s ok, i dont mind not attending.....","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1449.79956,"yPos":198.4},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"are
     you sure? i thought you wanna-","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-185.60022,"yPos":12.2000122},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"YES
-    IM SURE! NOW LET''s GO!","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-60.6004639,"yPos":140.200012},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"*Shivers*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":92.39894,"yPos":17.2000122},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
-    sorry....","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":247.399536,"yPos":153.200012},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"......","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":1607.7998,"yPos":83.3999939},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"YES
+    IM SURE! NOW LET''s GO!","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":1732.79956,"yPos":211.4},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"*Shivers*","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":1885.79956,"yPos":88.3999939},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+    sorry....","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":2040.80042,"yPos":224.4},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"......","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
     Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
@@ -38961,6 +39513,9 @@ GameObject:
   - component: {fileID: 1429674988}
   - component: {fileID: 1429674987}
   - component: {fileID: 1429674985}
+  - component: {fileID: 1429674990}
+  - component: {fileID: 1429674989}
+  - component: {fileID: 1429674991}
   m_Layer: 0
   m_Name: student event
   m_TagString: Untagged
@@ -38977,7 +39532,7 @@ Transform:
   m_GameObject: {fileID: 1429674983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.37}
+  m_LocalPosition: {x: -0.895, y: 42.06, z: -176.72}
   m_LocalScale: {x: 1.128, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -38998,10 +39553,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 8
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":268.301453,"yPos":241.000061},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":-285.399963,"yPos":-57.2000122},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ezekiel!
-    Dude, I thought you''d never make it!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Miguel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-243.899429,"yPos":108.7999},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    don''t have people with you? Like your ma?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Miguel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":8.101738,"yPos":9.799988},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Nah,
-    she''ll just catch up with me.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":245.101517,"yPos":122.799927},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":688.901367,"yPos":320.200073},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[5],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":true,"xPos":135.199982,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Ezekiel!
+    Dude, I thought you''d never make it!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Miguel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":176.700516,"yPos":187.999908},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    don''t have people with you? Like your ma?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Miguel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":428.7017,"yPos":89},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Nah,
+    she''ll just catch up with me.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":665.7015,"yPos":201.999939},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
     Imma bounce. Catch up inside so we can take seats.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Miguel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Ezekiel
@@ -39017,19 +39572,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!23 &1429674987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39080,6 +39623,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429674983}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1429674989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429674983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7492a6ee8be5ea04cb9101b6836dfd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TestConversation: {fileID: 1429674985}
+--- !u!65 &1429674990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429674983}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1429674991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429674983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ec3dd21b901594f8fd7b40bf3776e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectID: 4
 --- !u!1 &1447580098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
@@ -42871,11 +43461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3584540402981879693, guid: d4cd4a71b18ad554ba4727bc959ce364, type: 3}
       propertyPath: MagicPower
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3584540402981879693, guid: d4cd4a71b18ad554ba4727bc959ce364, type: 3}
       propertyPath: AttackPower
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7166717609713391790, guid: d4cd4a71b18ad554ba4727bc959ce364, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43261,6 +43851,8 @@ Transform:
   - {fileID: 1523006216}
   - {fileID: 28717194}
   - {fileID: 126886198}
+  - {fileID: 397381294}
+  - {fileID: 1382921918}
   - {fileID: 2128090320}
   - {fileID: 560135299}
   - {fileID: 832593264}
@@ -43277,6 +43869,7 @@ Transform:
   - {fileID: 1621438587}
   - {fileID: 666539505}
   - {fileID: 1575237591}
+  - {fileID: 1965944194}
   - {fileID: 1579218106}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44915,6 +45508,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 104757494}
+  - {fileID: 923224691}
   m_Father: {fileID: 874071213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685640188
@@ -47800,24 +48394,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 15
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":2406.40015,"yPos":210.2},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"hehehehehe......
-    yes","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":356.499756,"yPos":198},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAUUUUUURRRRRGGGGHHHHH!!!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":518.5,"yPos":25},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Remember
-    What you did when you were young......","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":721.500244,"yPos":190},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"NO...
-    NO. NOOOOOO!!!! ","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":915.500244,"yPos":49},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"PAY
-    THE CAUSE EZEKIEL!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"EZEKIEL","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":1104.49976,"yPos":200},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAUUUUGGGGHHHH!!!!
-    I- IM SORRY!!!!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"EZEKIEL","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":1277.50012,"yPos":18},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"EZEKIEL!!!!","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"RED
-    WISP","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1420.50037,"yPos":184},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"TALK
-    TO ME EZEKIEL!!!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"RED","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1542.50049,"yPos":13},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"he
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":2080.597,"yPos":311.8},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"close","parentUIDs":[13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":-168.800034,"yPos":123.599991},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"hehehehehe......
+    yes","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":30.6997375,"yPos":299.599976},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAUUUUUURRRRRGGGGHHHHH!!!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":192.699966,"yPos":126.599991},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Remember
+    What you did when you were young......","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":395.700439,"yPos":291.599976},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"NO...
+    NO. NOOOOOO!!!! ","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Ezekiel","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":589.700562,"yPos":150.599991},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"PAY
+    THE CAUSE EZEKIEL!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"EZEKIEL","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":778.699951,"yPos":301.599976},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAAAAAUUUUGGGGHHHH!!!!
+    I- IM SORRY!!!!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"EZEKIEL","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":951.700562,"yPos":119.599991},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"EZEKIEL!!!!","parentUIDs":[5],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"RED
+    WISP","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":1094.69873,"yPos":285.6},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"TALK
+    TO ME EZEKIEL!!!","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"RED","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":1216.69873,"yPos":114.599991},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"he
     can''t hear us anymore Red","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1742.50024,"yPos":177},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"i
+    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":1416.69849,"yPos":278.6},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"i
     knew it.... no wonder why the twins were not the chosen to be the wrath!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
-    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":1921.5,"yPos":38},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"RED!
+    wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":1595.69824,"yPos":139.599991},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"RED!
     there''s still a chance! all we have to do is to aid Ezekiel up to the mount
     greave","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":2123.50024,"yPos":168},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":1797.69824,"yPos":269.6},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"The
     Almighty told us that when the boy is in crisis, bring the boy to mount of greave
     and he shall face it''s final journey","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Blue
-    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":2299.49951,"yPos":69},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Thats
+    Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":1973.69751,"yPos":170.599991},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Thats
     Right! Let''s bring Eezekiel to the mountains together blue!","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Red
     Wisp","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
@@ -48108,6 +48702,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840471555}
   m_CullTransparentMesh: 1
+--- !u!1 &1843262649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843262650}
+  - component: {fileID: 1843262653}
+  - component: {fileID: 1843262652}
+  - component: {fileID: 1843262651}
+  m_Layer: 0
+  m_Name: Lust tree1 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843262650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843262649}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7070914, y: -0, z: -0, w: 0.7071222}
+  m_LocalPosition: {x: -3.89, y: 0.8, z: 7.31}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 923224691}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!65 &1843262651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843262649}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.02, y: 16.463163, z: 3.7}
+  m_Center: {x: -0.023763178, y: 8.170114, z: -0.00000047683713}
+--- !u!23 &1843262652
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843262649}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 73bbe2eddc020ab4ea7df80643aba264, type: 2}
+  - {fileID: 2100000, guid: 013ad5084de16c746b785efa91960805, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1843262653
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843262649}
+  m_Mesh: {fileID: 6239881831769578202, guid: bd9dea9f13c54a240a3efe0dca688e79, type: 3}
 --- !u!1 &1846192158
 GameObject:
   m_ObjectHideFlags: 0
@@ -48753,6 +49453,7 @@ GameObject:
   - component: {fileID: 1872455103}
   - component: {fileID: 1872455102}
   - component: {fileID: 1872455101}
+  - component: {fileID: 1872455104}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -48831,6 +49532,25 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 21300000, guid: 2c85875c7e0752640a20d77bfea8fe36, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1872455104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872455099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 3
+  TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &1875028953
 GameObject:
@@ -50176,9 +50896,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 4
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":620.5,"yPos":208},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAUUUURRRRGGGHHHH!!!!","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":157,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU,
-    WHO HARBOR THE GREATEST SIN OF ALL","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"WRATH","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":295.500061,"yPos":232},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"TO
-    THINK YOU''RE BLIND RAGE SOLE REASON TO KILL SOMEONE!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"WRATH","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":514.500061,"yPos":74},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":667.5003,"yPos":208},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"AAAUUUURRRRGGGHHHH!!!!","parentUIDs":[2],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":204,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU,
+    WHO HARBOR THE GREATEST SIN OF ALL","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"WRATH","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":342.500061,"yPos":232},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"TO
+    THINK YOU''RE BLIND RAGE SOLE REASON TO KILL SOMEONE!!!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"WRATH","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":561.5002,"yPos":74},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     DID NOT MEAN TO DO THAT","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"EZEKIEL","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: EZEKIEL
@@ -50980,6 +51700,110 @@ MonoBehaviour:
   TMPFont: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!1001 &1965944193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1596069020}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 435.068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 435.06802
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 755.3215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -270.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.42
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 60.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      propertyPath: m_Name
+      value: building B (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1965944196}
+  m_SourcePrefab: {fileID: 100100000, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+--- !u!4 &1965944194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+  m_PrefabInstance: {fileID: 1965944193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1965944195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
+  m_PrefabInstance: {fileID: 1965944193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1965944196
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965944195}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2597886825856113690, guid: 74fe4db60313c6e4eafb8358f2f3dcb5, type: 3}
 --- !u!1 &1966307131
 GameObject:
   m_ObjectHideFlags: 0
@@ -53623,86 +54447,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 495983618}
     m_Modifications:
-    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -465
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412014604622738307, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -230
-      objectReference: {fileID: 0}
-    - target: {fileID: 2443670819651565998, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: SceneLoader
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2443670819651565998, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: SceneNumber
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2041457739}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2041457738}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2971933316439188849, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198903117536931793, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 420
-      objectReference: {fileID: 0}
-    - target: {fileID: 3198903117536931793, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628965021525100415, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2041457739}
-    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2041457738}
-    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4187364001873224499, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -53729,23 +54473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 792.5
+      value: 1814.262
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 481.6905
-      objectReference: {fileID: 0}
-    - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.98437995
-      objectReference: {fileID: 0}
-    - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.98437995
-      objectReference: {fileID: 0}
-    - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.98437995
+      value: 1102.729
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53777,11 +54509,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -453
+      value: -955.90094
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -240.84525
+      value: -546.51416
       objectReference: {fileID: 0}
     - target: {fileID: 5509013089682282995, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53796,96 +54528,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 756693971}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 2041457739}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2041457739}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SkipConversation
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: addValue
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DialogueEditor.ConversationManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: ConvoAdderValue, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6849723953925029110, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8323297101017163613, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
       propertyPath: m_Name
       value: Skip Setting post battle
-      objectReference: {fileID: 0}
-    - target: {fileID: 8323297101017163613, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53900,11 +54548,6 @@ RectTransform:
 --- !u!1 &2041457738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8127378726025789160, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
-  m_PrefabInstance: {fileID: 2041457736}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2041457739 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3628965021525100415, guid: 10c1e85415fe9ed4cbaf9110dfb0a9ce, type: 3}
   m_PrefabInstance: {fileID: 2041457736}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2041457740 stripped
@@ -63868,11 +64511,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.8196079, g: 0.8235295, b: 0.8196079, a: 1}
     m_HighlightedColor: {r: 0.5764706, g: 0.5764706, b: 0.5764706, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6679245, g: 0.6679245, b: 0.6679245, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -66702,7 +67345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8403313240873927184
 RectTransform:
   m_ObjectHideFlags: 0

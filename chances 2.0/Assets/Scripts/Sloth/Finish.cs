@@ -21,7 +21,6 @@ public class Finish : MonoBehaviour
     public GameObject[] boxHide;
 
     public Vector2 startLocation;
-    bool hasStarted = false;
 
     private void Start()
     {

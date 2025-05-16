@@ -6,7 +6,7 @@ public class SetDefaultValues : MonoBehaviour
 {
 
 
-    public void Start()
+    public void Awake()
     {
         // Set default values
         PlayerStats.Instance.MaxPHealth = 100;

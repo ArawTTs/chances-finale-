@@ -2646,10 +2646,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25454bc180026a841b73c916d2a2b466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallBottle: 10
-  largeBottle: 10
-  smallMedkit: 10
-  largeMedkit: 10
+  smallBottle: 5
+  largeBottle: 2
+  smallMedkit: 5
+  largeMedkit: 2
 --- !u!4 &1940415046
 Transform:
   m_ObjectHideFlags: 0

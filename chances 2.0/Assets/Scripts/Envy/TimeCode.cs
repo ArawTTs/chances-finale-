@@ -41,7 +41,8 @@ public class TimeCode : MonoBehaviour
         // Update UI
         int secondsLeft = Mathf.CeilToInt(countdownTimer);
         countdownText.text = secondsLeft.ToString();
-        bar.fillAmount = countdownTimer / totalTime;
+        bar.fillAmount = countdownTimer / initialCountdownDuration;
+
         if (miniGameLife != null && miniGameLife.health <= 0)//GnP
         {
             gameManagerGreedPride.PlayerTakeDamage();
@@ -49,7 +50,7 @@ public class TimeCode : MonoBehaviour
 
         }
         //lose
-        if (countdownTimer == 0)
+        if (countdownTimer <= 0)
         {
 
             //Player Life Damage

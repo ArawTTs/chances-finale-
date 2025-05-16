@@ -35,7 +35,6 @@ public class GameManagerRhythm : MonoBehaviour
     public GameObject musicAnalyzer3GO;
 
     private MusicAnalyzer activeMusicAnalyzer;
-    private int missCount;
     private int consecutiveMissCount;
     public bool stopGame = false;
     public bool hasWon = false;
@@ -51,7 +50,6 @@ public class GameManagerRhythm : MonoBehaviour
         instance = this;
         scoreText.text = "Score : 0";
         currMultiplier = 1;
-        missCount = 0;
         stopGame = false;
 
 

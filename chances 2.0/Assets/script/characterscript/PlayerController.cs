@@ -2,10 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using DialogueEditor;
+using System.Runtime.CompilerServices;
+using UnityEngine.Rendering;
 
 public class PlayerController : MonoBehaviour
 {
+    bool isWalking;
     //raycast
+    public dialogueTrigger dialogueTrigger;
+    public ConversationManager conversationManager;
     public float groundDist;
     public LayerMask terrainLayer;
 
@@ -40,9 +46,15 @@ public class PlayerController : MonoBehaviour
             walk();
         }
     }
-    
+
     void FixedUpdate()
     {
+        if (ConversationManager.Instance.IsConversationActive)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
+
         rb.velocity = movement.normalized * speed;
     }
     private void OnEnable()
@@ -57,56 +69,63 @@ public class PlayerController : MonoBehaviour
         CameraSwitcher.Unregister(closeCam);
     }
 
-   void walk()
-   {
-    //Raycast
+    void walk()
+    {
+        //Raycast
         RaycastHit hit;
         Vector3 castPos = transform.position;
-        castPos.y +=1;
+        castPos.y += 1;
 
-        if(Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer))
+        if (Physics.Raycast(castPos, -transform.up, out hit, Mathf.Infinity, terrainLayer))
         {
-            if(hit.collider != null)
+            if (hit.collider != null)
             {
                 Vector3 movePos = transform.position;
                 movePos.y = hit.point.y + groundDist;
                 transform.position = movePos;
             }
         }
-        
-    //pause movement
-        if(dialogueManager.IsActive == true)
-        return; 
 
-    //player movement
+        //pause movement
+        // if (dialogueManager.IsActive == true || conversationManager.isConversationActive)
+        //     return;
+
+        if (ConversationManager.Instance.IsConversationActive)
+        {
+            movement = Vector3.zero;
+            rb.velocity = Vector3.zero;
+            return;
+        }
+
+        //player movement
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
         movement = new Vector3(x, 0f, y);
         anim.SetFloat("Horizontal", x);
         anim.SetFloat("Vertical", y);
-        
-        
-        if(movement != Vector3.zero)
+
+
+        if (movement != Vector3.zero)
         {
             anim.SetFloat(lastHorizontal, movement.x);
             anim.SetFloat(lastVertical, movement.z);
         }
 
-    //camera angle changer
-        if(Input.GetKeyDown(KeyCode.Space))
+        //camera angle changer
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(CameraSwitcher.IsActiveCamera(overworldCam))
+            if (CameraSwitcher.IsActiveCamera(overworldCam))
             {
                 CameraSwitcher.SwitchCamera(closeCam);
             }
-            else if(CameraSwitcher.IsActiveCamera(closeCam))
+            else if (CameraSwitcher.IsActiveCamera(closeCam))
             {
                 CameraSwitcher.SwitchCamera(overworldCam);
             }
-        } 
+        }
 
-   }
+    }
     private void LateUpdate()
     {
         if (cameraChange != null)

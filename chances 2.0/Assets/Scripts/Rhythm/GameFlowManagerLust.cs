@@ -30,7 +30,6 @@ public class GameFlowManagerLust : MonoBehaviour
     public DisableRhythmHealth gameLife;
     public BeatScroller beatScroller;
     private MusicAnalyzer musicAnalyzer;
-    private int currentLevel = 0;
     public GameObject gameover;
     public StartBlinkingAnim blink;
     public Item item;

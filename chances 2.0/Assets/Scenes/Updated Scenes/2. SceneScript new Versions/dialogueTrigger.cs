@@ -5,12 +5,11 @@ using DialogueEditor;
 public class dialogueTrigger : MonoBehaviour
 {
     public NPCConversation TestConversation;
-    
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
-           ConversationManager.Instance.StartConversation(TestConversation);
+            ConversationManager.Instance.StartConversation(TestConversation);
         }
     }
 }

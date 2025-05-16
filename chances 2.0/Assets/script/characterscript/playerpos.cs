@@ -9,13 +9,28 @@ public class playerpos : MonoBehaviour
 
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<gamemaster>();
-        transform.position = gm.lastcheckpointpos;
+        GameObject gmObject = GameObject.FindGameObjectWithTag("GM");
+        if (gmObject != null)
+        {
+            gm = gmObject.GetComponent<gamemaster>();
+            if (gm != null)
+            {
+                transform.position = gm.lastcheckpointpos;
+            }
+            else
+            {
+                Debug.LogWarning("gamemaster component missing on GM object!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No GameObject with tag 'GM' found!");
+        }
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

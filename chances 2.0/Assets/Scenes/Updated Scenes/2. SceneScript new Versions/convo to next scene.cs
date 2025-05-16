@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class convotonextscene : MonoBehaviour
 {
-    
+
     public Animator SceneLoader;
     public int SceneNumber;
 

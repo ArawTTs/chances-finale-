@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class movementScript : MonoBehaviour
 {
-    private int[] walkingSequence = { 0, 1, 0, 2, 0 }; 
-    private int currentSequenceIndex = 0; 
+    private int[] walkingSequence = { 0, 1, 0, 2, 0 };
+    private int currentSequenceIndex = 0;
 
     public float walkingTimer = 0;
     public float walkingLimit;
@@ -13,10 +13,10 @@ public class movementScript : MonoBehaviour
 
     public float walkingSpeed;
 
-    private bool isWalkingUp=false;
-    private bool isWalkingDown=false;
-    private bool isWalkingLeft=false;
-    private bool isWalkingRight=false;
+    private bool isWalkingUp = false;
+    private bool isWalkingDown = false;
+    private bool isWalkingLeft = false;
+    private bool isWalkingRight = false;
 
     public Animator walkingAnim;
 
@@ -40,7 +40,6 @@ public class movementScript : MonoBehaviour
         switch (walkingStyle)
         {
             case 0:
-                Debug.Log("Walking Style 0: Casual");
                 isWalkingUp = false;
                 isWalkingDown = false;
                 walkingAnim.SetBool("WalkUp", false);
@@ -48,21 +47,18 @@ public class movementScript : MonoBehaviour
                 break;
 
             case 1:
-                Debug.Log("Walking Style 1: Fast");
                 isWalkingUp = true;
                 isWalkingDown = false;
                 upWalking();
                 break;
 
             case 2:
-                Debug.Log("Walking Style 2: Stealthy");
                 isWalkingUp = false;
                 isWalkingDown = true;
                 downWalking();
                 break;
 
             default:
-                Debug.LogWarning("Unknown walking style");
                 break;
         }
 
@@ -71,7 +67,7 @@ public class movementScript : MonoBehaviour
 
     public void upWalking()
     {
-        if(isWalkingUp)
+        if (isWalkingUp)
         {
             walkingAnim.SetBool("WalkUp", true);
             transform.position += Vector3.forward * walkingSpeed * Time.deltaTime;
